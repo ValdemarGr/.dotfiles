@@ -1,1 +1,2 @@
 # .dotfiles
+Rice rice rice

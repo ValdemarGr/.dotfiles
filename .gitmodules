@@ -1,0 +1,3 @@
+[submodule "custom/windowstuff/i3ipc++"]
+	path = custom/windowstuff/i3ipc++
+	url = https://github.com/drmgc/i3ipcpp.git

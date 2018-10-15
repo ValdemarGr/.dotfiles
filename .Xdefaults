@@ -1,0 +1,41 @@
+*background: #1D2426
+*foreground: #AB9C71
+
+*cursorColor: #BE5E1E
+
+*color0:  #39474A
+*color1:  #986345
+*color2:  #788249
+*color3:  #9B6A46
+*color4:  #3E5951
+*color5:  #B9924A
+*color6:  #5d796a
+*color7:  #977D5E
+*color8:  #4C5F63
+*color9:  #B07350
+*color10: #869151
+*color11: #AF6B42
+*color12: #567A6E
+*color13: #D69D55
+*color14: #668574
+*color15: #AB9C71
+
+! URxvt*transparent:         true
+! URxvt*shading:             50
+
+URxvt*geometry:            112x22  
+URxvt*font:                xft:Menlo for Powerline:size=8
+URxvt*urlLauncher:         google-chrome 
+URxvt*scrollBar:           false
+URxvt*scrollBar_right:     true
+URxvt*scrollColor:         #000000
+URxvt.internalBorder:      1
+URxvt.letterSpace: -1
+URxvt.internalBorder: 35
+
+URxvt*depth: 32
+URxvt*background: [75]#1D2426
+
+Xft*dpi:                130
+Xft*antialias:          true
+Xft*hinting:            full

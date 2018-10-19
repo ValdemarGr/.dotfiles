@@ -2,12 +2,12 @@
 set $mod Mod4
 floating_modifier $mod
 set $term urxvt
-set $bg ~/wp/m.png
+set $bg ~/Git/.dotfiles/wp/m.png
 set $windowserversock         /tmp/edlav_wnsrv.sock
-set $windowserverscript       ~/Scripts/windowserver.py
-set $windowclient             ~/Scripts/windowclient.py
-set $gotowssh                 ~/Scripts/gotows.sh
-set $movewssh                 ~/Scripts/movews.sh
+set $windowserverscript       ~/Git/.dotfiles/Scripts/windowserver.py
+set $windowclient             ~/Git/.dotfiles/Scripts/windowclient.py
+set $gotowssh                 ~/Git/.dotfiles/Scripts/gotows.sh
+set $movewssh                 ~/Git/.dotfiles/Scripts/movews.sh
 
 
 # [INIT]
@@ -26,7 +26,7 @@ exec --no-startup-id feh --bg-scale $bg
 
 workspace 1 output eDP-1
 
-gaps inner 12
+gaps inner 14
 gaps outer 12
 
 bar {
@@ -44,7 +44,7 @@ bar {
   }
 }
 
-new_window pixel 4
+new_window pixel 0
 
 set $FOCUS #525252
 set $UNFOCUS #3c3b37

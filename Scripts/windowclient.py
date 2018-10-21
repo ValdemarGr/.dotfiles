@@ -57,6 +57,7 @@ def key(event):
     v.set(v.get() + c)
 
 def confirm(event):
+    root.destroy()
     sd.send(str(commandmodev.get() + "ws" + "," + v.get()).encode())
     exit()
 

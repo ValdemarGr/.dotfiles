@@ -41,10 +41,8 @@ while True:
                     p = re.search('^\s*[0-9]', n).group(0)
                     if p.isdigit() and int(p) == num:
                         i3.command(f"workspace {n}")
-                        break
-                    else:
-                        i3.command(f'workspace "{num}: new"')
-                        break
+                        return
+                i3.command(f'workspace "{num}: n"')
             
             if "movews" in cmd:
                 num = int(args[0])
@@ -54,10 +52,8 @@ while True:
                     p = re.search('^\s*[0-9]', n).group(0)
                     if p.isdigit() and int(p) == num:
                         i3.command(f"move container to workspace {n}")
-                        break
-                    else:
-                        i3.command(f'move container to workspace "{num}: new"')
-                        break
+                        return
+                i3.command(f'move container to workspace "{num}: n"')
                 
 
 

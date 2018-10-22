@@ -2,10 +2,13 @@ import tkinter as tk
 import sys
 import socket
 
-sockpath = sys.argv[1]
+#sockpath = sys.argv[1]
+port = sys.argv[1]
 
-sd = socket.socket(socket.AF_UNIX)
-sd.connect(sockpath)
+#sd = socket.socket(socket.AF_UNIX)
+sd = socket.socket()
+#sd.connect(sockpath)
+sd.connect(('127.0.0.1', int(port)))
 
 root = tk.Tk()
 
@@ -16,6 +19,11 @@ commandmodev = tk.StringVar()
 commandmodev.set("")
 commandmodel= tk.Label(root, textvariable=commandmodev)
 commandmodel.pack()
+
+def endprog():
+    sd.close()
+    root.destroy()
+    exit()
 
 if len(sys.argv) == 4:
     argin = sys.argv[2]
@@ -40,7 +48,9 @@ def key(event):
     c = repr(event.char)[1]
 
     if '\\' in c:
-        exit()
+        endprog()
+    if '\'' in c:
+        endprog()
 
     if len(commandmodev.get()) == 0:
         if 'g' in c:
@@ -51,15 +61,11 @@ def key(event):
             commandmodev.set("rename")
         return
 
-    if '\'' in c:
-        return 
-
     v.set(v.get() + c)
 
 def confirm(event):
-    root.destroy()
     sd.send(str(commandmodev.get() + "ws" + "," + v.get()).encode())
-    exit()
+    endprog()
 
 frame.bind("<Key>", key)
 frame.bind("<Return>", confirm)

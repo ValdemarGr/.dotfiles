@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir ~/trash 2>/dev/null
+
+toaffect=$1
+shift
+
+mv $toaffect ~/trash $*

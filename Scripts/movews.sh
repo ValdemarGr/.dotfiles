@@ -1,3 +1,3 @@
 #!/bin/bash
 
-printf "movews,$2" | nc -U $1
+printf "movews,$2" | nc 127.0.0.1 $1

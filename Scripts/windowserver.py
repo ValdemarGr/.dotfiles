@@ -1,76 +1,92 @@
 import i3ipc
 import sys
 import re
-import argparse
 import socket
 import os
-import tkinter as tk
+import threading
 
-sockdir = sys.argv[1]
+#sockdir = sys.argv[1]
+port = sys.argv[1]
 
-while True:
-    try:
+sd = socket.socket()
+sd.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+try:
 
-        try:
-            os.remove(sockdir) 
-        except:
-            pass
+    '''try:
+        os.remove(sockdir) 
+    except Exception as e:
+        print(e)
+        pass'''
+    #sd = socket.socket(socket.AF_UNIX)
+    
+    #sd.bind(sockdir)
+    sd.bind(('127.0.0.1',  int(port)))
+    sd.settimeout(None)
+    sd.listen()
 
-        i3 = i3ipc.Connection()
+    def refocus(i3):
+        for node in i3.get_tree().find_focused().workspace().nodes:
+            i3.command(f"[name={node.name}] focus")
+            break
 
-        sd = socket.socket(socket.AF_UNIX)
-        sd.bind(sockdir)
-        sd.listen()
+    def handle_command(items, i3):
+        cmd = items[0]
+        args = items[1:]
 
-        def handle_command(items):
-            cmd = items[0]
-            args = items[1:]
+        if "renamews" in cmd:
+            focus = i3.get_tree().find_focused().workspace()
+            newname = args[0]
+            prefix = focus.name[: focus.name.index(':') + 1]
+            final = prefix + " " + newname
+            i3.command(f"rename workspace to \"{final}\"")
 
-            if "renamews" in cmd:
-                focus = i3.get_tree().find_focused().workspace()
-                newname = args[0]
-                prefix = focus.name[: focus.name.index(':') + 1]
-                final = prefix + " " + newname
-                i3.command(f"rename workspace to \"{final}\"")
-
-            if "gotows" in cmd:
-                num = int(args[0])
-                wss = i3.get_workspaces()
-                for ws in wss:
-                    n = ws['name']
-                    p = re.search('^\s*[0-9]', n).group(0)
-                    if p.isdigit() and int(p) == num:
-                        i3.command(f"workspace {n}")
-                        return
-                i3.command(f'workspace "{num}: n"')
+        if "gotows" in cmd:
+            num = int(args[0])
+            wss = i3.get_workspaces()
+            for ws in wss:
+                n = ws['name']
+                p = re.search('^\s*[0-9]', n).group(0)
+                if p.isdigit() and int(p) == num:
+                    i3.command(f"workspace {n}")
+                    return
+            i3.command(f'workspace "{num}: n"')
+        
+        if "movews" in cmd:
+            num = int(args[0])
+            wss = i3.get_workspaces()
+            for ws in wss:
+                n = ws['name']
+                p = re.search('^\s*[0-9]', n).group(0)
+                if p.isdigit() and int(p) == num:
+                    i3.command(f"move container to workspace {n}")
+                    return
+            i3.command(f'move container to workspace "{num}: n"')
             
-            if "movews" in cmd:
-                num = int(args[0])
-                wss = i3.get_workspaces()
-                for ws in wss:
-                    n = ws['name']
-                    p = re.search('^\s*[0-9]', n).group(0)
-                    if p.isdigit() and int(p) == num:
-                        i3.command(f"move container to workspace {n}")
-                        return
-                i3.command(f'move container to workspace "{num}: n"')
-                
+    def handle_connection(client, address, i3):
+        try:
+            d = client.recv(1024)
+            formatted_input = (str(d)[2:-1]).split(',')
+            print(formatted_input)
 
+            if len(formatted_input)  == 2:
+                print("Handling")
+                handle_command(formatted_input, i3)
 
-        while True:
-            try:
-                (client,addr) = sd.accept()
-                d = client.recv(1024)
-                formatted_input = (str(d)[2:-1]).split(',')
-                print(formatted_input)
-                client.close()
+            refocus(i3)
+                #i3.command(f"workspace {i3.get_tree().find_focused().workspace().name}")
+        except Exception as e:
+            print(e)
+        finally:
+            client.close()
+        
 
-                handle_command(formatted_input)
+    while True:
+        i3 = i3ipc.Connection()
+        (client,addr) = sd.accept()
+        client.settimeout(12)
+        threading.Thread(target=handle_connection, args=(client, addr, i3)).start()
 
-            except:
-                pass
-
-        sd.shutdown(socket.SHUT_RDWR)
-        sd.close()
-    except:
-        pass
+except Exception as e:
+    sd.close()
+    print(e)
+    pass

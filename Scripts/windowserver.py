@@ -29,16 +29,43 @@ try:
             i3.command(f"[name={node.name}] focus")
             break
 
+    def get_icon(name: str):
+        return {
+            'spotify':'',
+            'term':'',
+            'chrome':'',
+            'remote':'',
+            'git':'',
+            'code':'',
+            'mail':'',
+            'fb':'',
+            'file':'',
+            'windows':'',
+        }[name]
+
     def handle_command(items, i3):
         cmd = items[0]
         args = items[1:]
 
+        if "iconws" in cmd:
+            focus = i3.get_tree().find_focused().workspace()
+            newname = get_icon(args[0])
+            try: 
+                prefix = focus.name[: focus.name.index(':') + 1]
+                final = prefix + " " + newname
+                i3.command(f"rename workspace to \"{final}\"")
+            except:
+                i3.command(f"rename workspace to \"{focus.name}: {newname}\"")
+
         if "renamews" in cmd:
             focus = i3.get_tree().find_focused().workspace()
             newname = args[0]
-            prefix = focus.name[: focus.name.index(':') + 1]
-            final = prefix + " " + newname
-            i3.command(f"rename workspace to \"{final}\"")
+            try: 
+                prefix = focus.name[: focus.name.index(':') + 1]
+                final = prefix + " " + newname
+                i3.command(f"rename workspace to \"{final}\"")
+            except:
+                i3.command(f"rename workspace to \"{focus.name}: {newname}\"")
 
         if "gotows" in cmd:
             num = int(args[0])

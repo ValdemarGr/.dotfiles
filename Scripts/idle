@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+env neofetch=true urxvt -ls -name neofetchwin &
+env pipes=true urxvt -ls -name pipeswin &
+env htop=true urxvt -ls -name htopwin &
+
+

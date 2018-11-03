@@ -2,33 +2,36 @@
 set $mod Mod4
 floating_modifier $mod
 set $term urxvt
-set $bg ~/Git/.dotfiles/wp/m.paintedmountain.png
+set $bg ~/Git/.dotfiles/wp/m.blurnature.jpg
 set $windowserverport         6969
 set $windowserverscript       ~/Git/.dotfiles/Scripts/windowserver.py
-set $windowclient             ~/Git/.dotfiles/Scripts/windowclient.py
-set $gotowssh                 ~/Git/.dotfiles/Scripts/gotows.sh
-set $movewssh                 ~/Git/.dotfiles/Scripts/movews.sh
+set $windowclient             ~/Git/.dotfiles/Scripts/windowclient.sh
+set $gap 12
 
 
 # [INIT]
+exec $term -name dropdown
 for_window [instance="dropdown"] floating enable;
 for_window [instance="dropdown"] move scratchpad;
 font pango:System San Francisco Display 12
 
+
+exec --no-startup-id xrandr --output HDMI-1-1 --mode 1920x1080 --right-of DP-5 
 exec --no-startup-id xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
 exec --no-startup-id xrandr --addmode eDP-1 1920x1080_60.00
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080_60.00
 
-exec --no-startup-id i3-msg 'rename workspace to "1: n"'
-
 exec --no-startup-id compton -b -c --vsync opengl
 exec --no-startup-id feh --bg-scale $bg
-exec --no-startup-id exec /usr/lib/xfce4/notifyd/xfce4-notifyd 
+exec --no-startup-id exec /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 workspace 1 output eDP-1
 
-gaps inner 14
-gaps outer 10
+gaps inner 12
+gaps outer 12
+
+bindsym $mod+w gaps inner current set 0; gaps outer current set 0
+bindsym $mod+s gaps inner current set $gap; gaps outer current set $gap
 
 exec --no-startup-id setxkbmap -layout dk
 
@@ -36,14 +39,15 @@ bar {
   font pango:Menlo for Powerline 9, FontAwesome 9
 	position top
   #tray_output none
-  status_command python3 ~/Git/bumblebee-status/bumblebee-status -m spotify nic disk:root cpu memory battery date time pasink pasource -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
+  #1status_command i3blocks
+  status_command python3 ~/Git/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery pasink pasource date time -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
   #status_command i3status
   colors {
-    background #1f2733
+    background #1d2021
  
-    focused_workspace   #1f2733 #1f2733 #ffffff
-    active_workspace  #1f2733 #1f2733 #ffffff
-    inactive_workspace  #1f2733 #1f2733 #888888
+    focused_workspace   #1d2021 #1d2021 #ffffff
+    active_workspace  #1d2021 #1d2021 #ffffff
+    inactive_workspace  #1d2021 #1d2021 #888888
   }
 }
 
@@ -64,7 +68,6 @@ exec --no-startup-id python3 $windowserverscript $windowserverport
 
 # [KEYBINDS]
 bindsym $mod+u [instance="dropdown"] scratchpad show
-bindsym $mod+i exec $term -name dropdown
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -112,9 +115,9 @@ bindsym $mod+v split v
 
 bindsym $mod+f fullscreen toggle
 
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 bindsym $mod+Shift+space floating toggle
 
@@ -125,10 +128,14 @@ bindsym $mod+a focus parent
 bindsym $mod+Control+Right workspace next
 bindsym $mod+Control+Left workspace prev
 
-bindsym $mod+c exec --no-startup-id python3 $windowclient $windowserverport
-bindsym $mod+g exec --no-startup-id python3 $windowclient $windowserverport goto
-bindsym $mod+n exec --no-startup-id python3 $windowclient $windowserverport rename
-bindsym $mod+m exec --no-startup-id python3 $windowclient $windowserverport move
+#bindsym $mod+c exec --no-startup-id python3 $windowclient $windowserverport
+#bindsym $mod+g exec --no-startup-id python3 $windowclient $windowserverport goto
+#bindsym $mod+n exec --no-startup-id python3 $windowclient $windowserverport rename
+#bindsym $mod+m exec --no-startup-id python3 $windowclient $windowserverport move
+bindsym $mod+g exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "goto" %s' -P 'go to workspace: '
+bindsym $mod+n exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "rename" %s' -P 'rename workspace: '
+bindsym $mod+m exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "move" %s' -P 'move to workspace: '
+bindsym $mod+i exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "icon" %s' -P 'rename workspace icon: '
 
 #bindsym $mod+g exec --no-startup-id i3-input -F 'exec "echo "gotows,%s" | nc -U $windowserverport"' -P 'go to workspace: '
 #bindsym $mod+n exec --no-startup-id i3-input -F 'exec "echo "renamews,%s" | nc -U $windowserverport"' -P 'rename workspace: '
@@ -136,27 +143,27 @@ bindsym $mod+m exec --no-startup-id python3 $windowclient $windowserverport move
 
 bindsym $mod+b exec --no-startup-id i3-input -F 'exec xrandr --output eDP-1 --brightness %s' -P 'set brightness: '
 
-bindsym $mod+1 exec bash $gotowssh $windowserverport 1
-bindsym $mod+2 exec bash $gotowssh $windowserverport 2
-bindsym $mod+3 exec bash $gotowssh $windowserverport 3
-bindsym $mod+4 exec bash $gotowssh $windowserverport 4
-bindsym $mod+5 exec bash $gotowssh $windowserverport 5
-bindsym $mod+6 exec bash $gotowssh $windowserverport 6
-bindsym $mod+7 exec bash $gotowssh $windowserverport 7
-bindsym $mod+8 exec bash $gotowssh $windowserverport 8
-bindsym $mod+9 exec bash $gotowssh $windowserverport 9
-bindsym $mod+0 exec bash $gotowssh $windowserverport 0
+bindsym $mod+1 exec bash $windowclient $windowserverport "goto" 1
+bindsym $mod+2 exec bash $windowclient $windowserverport "goto" 2
+bindsym $mod+3 exec bash $windowclient $windowserverport "goto" 3
+bindsym $mod+4 exec bash $windowclient $windowserverport "goto" 4
+bindsym $mod+5 exec bash $windowclient $windowserverport "goto" 5
+bindsym $mod+6 exec bash $windowclient $windowserverport "goto" 6
+bindsym $mod+7 exec bash $windowclient $windowserverport "goto" 7
+bindsym $mod+8 exec bash $windowclient $windowserverport "goto" 8
+bindsym $mod+9 exec bash $windowclient $windowserverport "goto" 9
+bindsym $mod+0 exec bash $windowclient $windowserverport "goto" 0
 
-bindsym $mod+Shift+1 exec bash $movewssh $windowserverport 1
-bindsym $mod+Shift+2 exec bash $movewssh $windowserverport 2
-bindsym $mod+Shift+3 exec bash $movewssh $windowserverport 3
-bindsym $mod+Shift+4 exec bash $movewssh $windowserverport 4
-bindsym $mod+Shift+5 exec bash $movewssh $windowserverport 5
-bindsym $mod+Shift+6 exec bash $movewssh $windowserverport 6
-bindsym $mod+Shift+7 exec bash $movewssh $windowserverport 7
-bindsym $mod+Shift+8 exec bash $movewssh $windowserverport 8
-bindsym $mod+Shift+9 exec bash $movewssh $windowserverport 9
-bindsym $mod+Shift+0 exec bash $movewssh $windowserverport 0
+bindsym $mod+Shift+1 exec bash $windowclient $windowserverport "move" 1
+bindsym $mod+Shift+2 exec bash $windowclient $windowserverport "move" 2
+bindsym $mod+Shift+3 exec bash $windowclient $windowserverport "move" 3
+bindsym $mod+Shift+4 exec bash $windowclient $windowserverport "move" 4
+bindsym $mod+Shift+5 exec bash $windowclient $windowserverport "move" 5
+bindsym $mod+Shift+6 exec bash $windowclient $windowserverport "move" 6
+bindsym $mod+Shift+7 exec bash $windowclient $windowserverport "move" 7
+bindsym $mod+Shift+8 exec bash $windowclient $windowserverport "move" 8
+bindsym $mod+Shift+9 exec bash $windowclient $windowserverport "move" 9
+bindsym $mod+Shift+0 exec bash $windowclient $windowserverport "move" 0
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart

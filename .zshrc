@@ -2,7 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/edlav/.oh-my-zsh"
+export ZSH="/home/valde/.oh-my-zsh"
+export PATH=$PATH:~/Git/.dotfiles/Scripts
+export PATH=$HOME/Local/flutter/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,10 +74,6 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-#export PATH=$HOME/.local/bin:$PATH
-#. /home/valde/.local/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-# . ~/Git/powerline/powerline/bindings/zsh/powerline.zsh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -101,27 +99,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias python=python3
-alias pip=pip3
-alias gows='bash ~/Scripts/gows.sh > /dev/null 2>&1 &'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Use ~~ as the trigger sequence instead of the default **
-export FZF_COMPLETION_TRIGGER='~~'
+# Idiot proof deletion
+alias tt="bash ~/Git/.dotfiles/Scripts/totrash"
 
-# Options to fzf command
-export FZF_COMPLETION_OPTS='+c -x'
-
-# Use fd (https://github.com/sharkdp/fd) instead of the default find
-# command for listing path candidates.
-# - The first argument to the function ($1) is the base path to start traversal
-# - See the source code (completion.{bash,zsh}) for the details.
-_fzf_compgen_path() {
-  fd --hidden --follow --exclude ".git" . "$1"
-}
-
-# Use fd to generate the list for directory completion
-_fzf_compgen_dir() {
-  fd --type d --hidden --follow --exclude ".git" . "$1"
-}
+# Emacs tramp fix
+if [[ "$TERM" == "dumb" ]]
+then
+  unsetopt zle
+  unsetopt prompt_cr
+  unsetopt prompt_subst
+  unfunction precmd
+  unfunction preexec
+  PS1='$ '
+fi

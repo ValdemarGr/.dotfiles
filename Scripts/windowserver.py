@@ -31,6 +31,17 @@ try:
 
     def get_icon(name: str):
         return {
+            'db': '',
+            'cursor':'',
+            'screw':'',
+            'status':'',
+            'flake':'',
+            'brain':'',
+            'docker':'',
+            'kraken':'',
+            'lit':'',
+            'cat':'',
+            'blob':'',
             'spotify':'',
             'term':'',
             'chrome':'',

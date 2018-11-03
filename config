@@ -53,7 +53,7 @@ bar {
 
 new_window pixel 1
 
-set $FOCUS #525252
+set $FOCUS #62ACC4
 set $UNFOCUS #3c3b37
 
 client.focused 			$FOCUS $FOCUS $FOCUS $FOCUS

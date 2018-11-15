@@ -31,6 +31,7 @@ try:
 
     def get_icon(name: str):
         return {
+            'ts':'',
             'discord':'',
             'db': '',
             'cursor':'',

@@ -17,16 +17,16 @@ font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=12;2"
 font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=12;2"
 font-5 = "Font Awesome 5 Brands:pixelsize=12;2"
 
-modules-left = battery cpu memory filesystem
+modules-left = battery filesystem memory cpu
 modules-center = i3
-modules-right = pulseaudio date
+modules-right = wired wireless pulseaudio date
 
 border-top-size = 0
 border-left-size = 22
 border-right-size = 22
 border-bottom-size = 0
 
-module-margin = 1
+module-margin = 2
 
 radius = 6.0
 
@@ -37,6 +37,25 @@ radius = 6.0
 ;tray-scale = 1.0
 ;tray-offset-x = 0
 ;tray-offset-y = 0
+
+[module/wireless]
+type = internal/network
+interface = wlp2s0
+
+interval = 3.0
+
+format-connected =  <label-connected>
+format-disconnected =  <label-disconnected>
+
+label-connected-padding-left = 2
+
+format-connected-padding = 4
+format-disconnected-padding = 4
+
+
+[module/wired]
+type = internal/network
+
 
 [module/filesystem]
 type = internal/fs
@@ -51,7 +70,7 @@ format-mounted-padding = 3
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume =  <label-volume> 
+format-volume =  <label-volume>
 
 [module/date]
 type = internal/date
@@ -81,12 +100,33 @@ label =  %gb_used%/%gb_free%
 [module/battery]
 type = internal/battery
 
-full-at = 99
+full-at = 95
 
 battery = BAT0
 adapter = ADP1
 
 poll-interval = 5
+
+format-charging = <label-charging> <animation-charging> 
+format-discharing = <label-discharging>
+format-full = <label-full>
+
+label-charging = %percentage%%
+label-discharging = %percentage%%  
+label-full = %percentage%% 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+
+bar-capacity-width = 1
+
+label-discharging-padding-left = 6
+label-charging-padding-left = 6
+label-full-padding-left = 6
 
 [module/i3]
 type = internal/i3
@@ -123,7 +163,8 @@ interval = 0.5
 format = <label>
 
 label =  %percentage%%
-label-padding = 4
 
 label-underline = #000000
+
+label-padding-left = 2
 

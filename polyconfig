@@ -10,7 +10,7 @@ foreground = #3b3426
 ;font-0 = "Meslo LG L:pixelsize=12:weight=bold;3"
 ;font-0 = fixed:pixelsize=12:weight=bold;0
 ;font-0 = "SFNS Display:pixelsize=12:weight=bold;1"
-font-0 = "Inconsolata:pixelsize=12:weight=bold;1
+font-0 = "Inconsolatas:pixelsize=12:weight=bold;1"
 font-1 = unifont:fontformat=truetype:size=8:weight=bold:antialias=false;0
 font-2 = "Wuncon siji:pixelsize=14;1"
 font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=12;2"
@@ -22,13 +22,13 @@ modules-center = i3
 modules-right = wired wireless pulseaudio date
 
 border-top-size = 0
-border-left-size = 22
-border-right-size = 22
+;border-left-size = 22
+;border-right-size = 22
 border-bottom-size = 0
 
 module-margin = 2
 
-radius = 6.0
+;radius = 6.0
 
 ;tray-position = right
 ;tray-maxsize = 16
@@ -55,6 +55,17 @@ format-disconnected-padding = 4
 
 [module/wired]
 type = internal/network
+interface = enp4s0
+
+interval = 3.0
+
+format-connected =  <label-connected>
+format-disconnected =  <label-disconnected>
+
+label-connected-padding-left = 2
+
+format-connected-padding = 4
+format-disconnected-padding = 4
 
 
 [module/filesystem]
@@ -162,7 +173,7 @@ interval = 0.5
 
 format = <label>
 
-label =  %percentage%%
+label =  %percentage:3%%
 
 label-underline = #000000
 

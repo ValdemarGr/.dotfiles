@@ -1,0 +1,181 @@
+# [CONSTANTS]
+set $mod Mod4
+floating_modifier $mod
+set $term urxvt
+set $bg ~/Git/.dotfiles/wp/m.blurnature.jpg
+set $windowserverport         6969
+set $windowserverscript       ~/Git/.dotfiles/Scripts/windowserver.py
+set $windowclient             ~/Git/.dotfiles/Scripts/windowclient.sh
+set $wallpaper_random             ~/Git/.dotfiles/Scripts/wallpaper_random.sh
+set $poly		      ~/Git/.dotfiles/Scripts/launch_poly.sh
+set $gap 12
+
+
+# [INIT]
+exec $term -name dropdown
+for_window [instance="dropdown"] floating enable;
+for_window [instance="dropdown"] move scratchpad;
+font pango:System San Francisco Display 12
+
+
+#exec --no-startup-id feh --bg-scale $bg
+exec bash $wallpaper_random
+exec --no-startup-id exec /usr/lib/xfce4/notifyd/xfce4-notifyd
+
+workspace 1 output eDP-1
+
+gaps inner 12
+gaps outer 10
+
+
+exec --no-startup-id setxkbmap -layout dk
+
+#bar {
+#  font pango:Menlo for Powerline 11, FontAwesome 11
+#	position top
+#  #tray_output none
+#  #1status_command i3blocks
+#  status_command python3 ~/Git/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery pasink pasource date time -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
+#  #status_command i3status
+#  colors {
+#    background #1d2021
+# 
+#    focused_workspace   #1d2021 #1d2021 #ffffff
+#    active_workspace  #1d2021 #1d2021 #ffffff
+#    inactive_workspace  #1d2021 #1d2021 #888888
+#  }
+#}
+
+new_window pixel 1
+
+set $FOCUS #B1B541
+set $UNFOCUS #3c3b37
+
+client.focused 			$FOCUS $FOCUS $FOCUS $FOCUS
+client.focused_inactive $UNFOCUS $UNFOCUS $UNFOCUS $UNFOCUS
+client.unfocused 		$UNFOCUS $UNFOCUS $UNFOCUS $UNFOCUS
+client.urgent 			$FOCUS $FOCUS $FOCUS $FOCUS
+client.background 		$UNFOCUS
+
+focus_follows_mouse no
+
+exec --no-startup-id python $windowserverscript $windowserverport
+
+# [KEYBINDS]
+bindsym $mod+u [instance="dropdown"] scratchpad show
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym $mod+q exec killall -9 polybar
+bindsym $mod+a exec killall -9 polybar; exec bash $poly
+
+bindsym $mod+s gaps inner current set $gap; gaps outer current set $gap
+bindsym $mod+w gaps inner current set 0; gaps outer current set 0
+
+bindsym $mod+Return exec $term -e zsh
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec "rofi -combi-modi drun,run -show combi" 
+
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+ae focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+l exec --no-startup-id betterlockscreen -l dim
+
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+ae move right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+h split h
+
+bindsym $mod+v split v
+
+bindsym $mod+f fullscreen toggle
+
+bindsym $mod+Shift+space floating toggle
+
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+Control+Right move workspace to output right
+bindsym $mod+Control+Left move workspace to output left
+
+bindsym $mod+g exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "goto" %s' -P 'go to workspace: '
+
+bindsym $mod+n exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "rename" %s' -P 'rename workspace: '
+bindsym $mod+m exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "move" %s' -P 'move to workspace: '
+bindsym $mod+i exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "icon" %s' -P 'rename workspace icon: '
+
+bindsym $mod+b exec --no-startup-id i3-input -F 'exec xrandr --output eDP-1 --brightness %s' -P 'set brightness: '
+
+bindsym $mod+1 exec bash $windowclient $windowserverport "goto" 1
+bindsym $mod+2 exec bash $windowclient $windowserverport "goto" 2
+bindsym $mod+3 exec bash $windowclient $windowserverport "goto" 3
+bindsym $mod+4 exec bash $windowclient $windowserverport "goto" 4
+bindsym $mod+5 exec bash $windowclient $windowserverport "goto" 5
+bindsym $mod+6 exec bash $windowclient $windowserverport "goto" 6
+bindsym $mod+7 exec bash $windowclient $windowserverport "goto" 7
+bindsym $mod+8 exec bash $windowclient $windowserverport "goto" 8
+bindsym $mod+9 exec bash $windowclient $windowserverport "goto" 9
+bindsym $mod+0 exec bash $windowclient $windowserverport "goto" 0
+
+bindsym $mod+Shift+1 exec bash $windowclient $windowserverport "move" 1
+bindsym $mod+Shift+2 exec bash $windowclient $windowserverport "move" 2
+bindsym $mod+Shift+3 exec bash $windowclient $windowserverport "move" 3
+bindsym $mod+Shift+4 exec bash $windowclient $windowserverport "move" 4
+bindsym $mod+Shift+5 exec bash $windowclient $windowserverport "move" 5
+bindsym $mod+Shift+6 exec bash $windowclient $windowserverport "move" 6
+bindsym $mod+Shift+7 exec bash $windowclient $windowserverport "move" 7
+bindsym $mod+Shift+8 exec bash $windowclient $windowserverport "move" 8
+bindsym $mod+Shift+9 exec bash $windowclient $windowserverport "move" 9
+bindsym $mod+Shift+0 exec bash $windowclient $windowserverport "move" 0
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+r mode "resize"
+
+mode "resize" {
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym ae resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+
+        bindsym Shift+Left resize shrink width 1 px or 1 ppt
+        bindsym Shift+Down resize grow height 1 px or 1 ppt
+        bindsym Shift+Up resize shrink height 1 px or 1 ppt
+        bindsym Shift+Right resize grow width 1 px or 1 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+

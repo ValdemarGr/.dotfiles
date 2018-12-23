@@ -10,8 +10,11 @@ port = sys.argv[1]
 
 sd = socket.socket()
 sd.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-try:
 
+zenpad_name = 'zenpad'
+zenpad_toggle = False
+
+try:
     '''try:
         os.remove(sockdir) 
     except Exception as e:
@@ -57,6 +60,8 @@ try:
         }[name]
 
     def handle_command(items, i3):
+        global zenpad_toggle
+
         cmd = items[0]
         args = items[1:]
 
@@ -85,7 +90,7 @@ try:
             wss = i3.get_workspaces()
             for ws in wss:
                 n = ws['name']
-                p = re.search('^\s*[0-9]', n).group(0)
+                p = re.search('^\s*[0-9]*', n).group(0)
                 if p.isdigit() and int(p) == num:
                     i3.command(f"workspace {n}")
                     return
@@ -101,6 +106,16 @@ try:
                     i3.command(f"move container to workspace {n}")
                     return
             i3.command(f'move container to workspace "{num}: n"')
+
+        if "zenpad" in cmd:
+            print(zenpad_toggle)
+            if zenpad_toggle == True:
+                i3.command(f'[instance="{zenpad_name}"] fullscreen disable; [instance="{zenpad_name}"] move scratchpad')
+                zenpad_toggle = False
+            else:
+                i3.command(f'[instance="{zenpad_name}"] scratchpad show; [instance="{zenpad_name}"] floating disable; [instance="{zenpad_name}"] fullscreen enable')
+                zenpad_toggle = True
+
             
     def handle_connection(client, address, i3):
         try:

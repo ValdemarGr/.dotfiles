@@ -10,4 +10,5 @@ case "$cmd" in
     ("move")    printf "movews,$arg" | nc 127.0.0.1 $port ;;
     ("icon")    printf "iconws,$arg" | nc 127.0.0.1 $port ;;
     ("zenpad")    printf "zenpad,-1" | nc 127.0.0.1 $port ;;
+    ("poly")    printf "poly,-1" | nc 127.0.0.1 $port ;;
 esac

@@ -4,25 +4,22 @@ import re
 import socket
 import os
 import threading
+import psutil
+import subprocess
 
-#sockdir = sys.argv[1]
 port = sys.argv[1]
 
 sd = socket.socket()
 sd.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
+POLY_RUNNING = False
+
+
 zenpad_name = 'zenpad'
 zenpad_toggle = False
 
 try:
-    '''try:
-        os.remove(sockdir) 
-    except Exception as e:
-        print(e)
-        pass'''
-    #sd = socket.socket(socket.AF_UNIX)
-    
-    #sd.bind(sockdir)
+
     sd.bind(('127.0.0.1',  int(port)))
     sd.settimeout(None)
     sd.listen()
@@ -62,6 +59,7 @@ try:
     def handle_command(items, i3):
         global zenpad_toggle
 
+        global POLY_RUNNING
         cmd = items[0]
         args = items[1:]
 
@@ -106,6 +104,20 @@ try:
                     i3.command(f"move container to workspace {n}")
                     return
             i3.command(f'move container to workspace "{num}: n"')
+
+        if "poly" in cmd:
+            PROCNAME = "polybar"
+
+            if POLY_RUNNING == True:
+                for proc in psutil.process_iter():
+                    if proc.name() == PROCNAME:
+                        print(proc.name())
+                        proc.kill()
+                        POLY_RUNNING = False
+            else:
+                subprocess.call("bash launch_poly.sh", shell=True)
+                POLY_RUNNING = True
+
 
         if "zenpad" in cmd:
             print(zenpad_toggle)

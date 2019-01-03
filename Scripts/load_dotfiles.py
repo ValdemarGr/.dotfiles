@@ -18,9 +18,9 @@ for cfg in configurationfiles:
         continue
 
     print(f'{cfg[MESSAGE]} found \n' +
-        f'at local directory {cfg[LOCAL_DIRECTORY]}\n' +
-        f'will be saved at directory {cfg[SAVE_DIRECTORY]}')
-    print(cfg[MESSAGE] + ", found, want to export it [y/n/a]?")
+        f'at autosave directory {cfg[SAVE_DIRECTORY]}\n' +
+        f'will be saved at local directory {cfg[LOCAL_DIRECTORY]}')
+    print(cfg[MESSAGE] + ", found, want to import it [y/n/a]?")
     answer = str(input())
 
     if answer == "a":
@@ -32,10 +32,11 @@ for cfg in configurationfiles:
 
 for choice in chosen:
     print(choice[MESSAGE])
-    outdir = os.path.expanduser(choice[SAVE_DIRECTORY])
+    outdir = os.path.expanduser(choice[LOCAL_DIRECTORY])
 
     if not os.path.exists(outdir):
-        os.makedirs(os.path.dirname(outdir))
+        os.mkdir(os.path.dirname(outdir))
 
-    copyfile(os.path.expanduser(choice[LOCAL_DIRECTORY]), outdir)
+    copyfile(os.path.expanduser(choice[SAVE_DIRECTORY]), outdir)
+
 

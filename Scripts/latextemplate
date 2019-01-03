@@ -1,1 +1,4 @@
 #!/bin/bash
+
+templatefile=$1
+cp "$HOME/Git/.dotfiles/Scripts/resources/templates/latex/$templatefile" .

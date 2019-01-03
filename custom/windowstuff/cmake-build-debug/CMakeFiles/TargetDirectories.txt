@@ -1,3 +1,0 @@
-/home/edlav/Git/.dotfiles/custom/windowstuff/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/edlav/Git/.dotfiles/custom/windowstuff/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/edlav/Git/.dotfiles/custom/windowstuff/cmake-build-debug/CMakeFiles/windowstuff.dir

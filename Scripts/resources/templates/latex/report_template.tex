@@ -1,0 +1,85 @@
+\documentclass[a4paper,10pt]{article}
+    \usepackage{a4wide}
+    
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[english]{babel}
+    
+    \usepackage{color}
+    \usepackage{float}
+    \usepackage{fancyvrb}
+    
+    \usepackage{amssymb}
+    \usepackage{amsmath}
+    \usepackage{listings}
+    \usepackage{comment} 
+    \usepackage{algorithm2e}
+    
+    \usepackage{parskip}
+    \usepackage{graphicx}
+    \usepackage{algpseudocode}
+    \DeclareGraphicsExtensions{.png}
+    
+    % Monokai
+    \usepackage{xcolor}
+    %\pagecolor[rgb]{0.152,0.156,0.133}
+    %\color[rgb]{1,1,1}
+    
+    \definecolor{dkgreen}{rgb}{0,0.45,0}
+    \definecolor{gray}{rgb}{0.5,0.5,0.5}
+    \definecolor{mauve}{rgb}{0.30,0,0.30}
+    
+    % Default settings for code listings
+    % Default settings for code listings
+    \lstset{frame=tb,
+      language=Java,
+      aboveskip=3mm,
+      belowskip=3mm,
+      showstringspaces=false,
+      columns=flexible,
+      basicstyle={\small\ttfamily},
+      numbers=left,
+      numberstyle=\footnotesize,
+      %keywordstyle=\color{dkgreen}\bfseries,
+      commentstyle=\color{dkgreen},
+      stringstyle=\color{mauve},
+      frame=single,
+      breaklines=true,
+      breakatwhitespace=false
+      tabsize=1
+    }
+
+    
+    
+    %indsæt jeres navn herunder.
+    \title{TITLE \\\rule{10cm}{0.5mm}}
+    \author{%
+    %Andreas Abild Mortensen (anmor16) \\
+    Samuel Valdemar Grange (sagra16) \\
+    %Mads Grau Kristensen (mkris16) \\
+    \rule{5.5cm}{0.5mm}\\}
+    
+    
+    \begin{document}
+    
+    \maketitle
+    
+    \clearpage
+
+    \section{}
+    \subsection*{nonumbered subsection}
+    \begin{algorithm}[H]
+        \SetAlgoLined
+        Algorithm(x)
+    \end{algorithm}
+
+    \section{}
+    \begin{center} 
+        \begin{tabular}{|r|l|} 
+        \hline 
+        desc & values \\ 
+        \hline 
+        \end{tabular} 
+        \end{center} 
+    
+    \end{document}

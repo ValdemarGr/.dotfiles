@@ -1,0 +1,4 @@
+#!/bin/bash
+
+import $HOME/.tmpimg.png && xclip -selection clipboard -t image/png -i $HOME/.tmpimg.png 
+

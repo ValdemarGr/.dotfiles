@@ -118,7 +118,6 @@ try:
                 subprocess.call("bash launch_poly.sh", shell=True)
                 POLY_RUNNING = True
 
-
         if "zenpad" in cmd:
             print(zenpad_toggle)
             if zenpad_toggle == True:
@@ -128,7 +127,6 @@ try:
                 i3.command(f'[instance="{zenpad_name}"] scratchpad show; [instance="{zenpad_name}"] floating disable; [instance="{zenpad_name}"] fullscreen enable')
                 zenpad_toggle = True
 
-            
     def handle_connection(client, address, i3):
         try:
             d = client.recv(1024)

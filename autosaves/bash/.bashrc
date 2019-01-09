@@ -1,6 +1,9 @@
 #
 # ~/.bashrc
 #
+export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin
+export PRIMARY_MONITOR=DP-4
+export PATH=$PATH:$HOME/Git/.dotfiles/Scripts
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -8,19 +11,11 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export PRIMARY_MONITOR=eDP1
+source $HOME/anaconda3/etc/profile.d/conda.sh
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+conda activate arch
 
+#alias python=/home/valde/anaconda3/envs/arch/bin/python
+#alias python3=/home/valde/anaconda3/envs/arch/bin/python3
 
-# Emacs tramp fix
-if [[ "$TERM" == "dumb" ]]
-then
-  unsetopt zle
-  unsetopt prompt_cr
-  unsetopt prompt_subst
-  unfunction precmd
-  unfunction preexec
-  PS1='$ '
-fi
 

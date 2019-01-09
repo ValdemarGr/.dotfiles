@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/valde/anaconda3/envs/arch/bin/python",
+    "python.pythonPath": "/home/valde/anaconda3/envs/ml/bin/python",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true
 }

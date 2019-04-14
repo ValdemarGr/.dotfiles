@@ -7,7 +7,7 @@
 *color1:  #986345
 *color2:  #788249
 *color3:  #9B6A46
-*color4:  #9A8518
+*color4:  #3E5951
 *color5:  #B9924A
 *color6:  #5d796a
 *color7:  #977D5E
@@ -31,10 +31,10 @@ URxvt*scrollBar_right:     true
 URxvt*scrollColor:         #000000
 URxvt.internalBorder:      1
 URxvt.letterSpace: -1
-URxvt.internalBorder: 35
+URxvt.internalBorder: 25
 
 URxvt*depth: 32
-URxvt*background: [75]#1D2426
+URxvt*background: [90]#1d2426
 
 Xft*dpi:                130
 Xft*antialias:          true

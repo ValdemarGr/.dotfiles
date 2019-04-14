@@ -1,0 +1,11 @@
+[Unit]
+Description=Local system resume actions
+After=suspend.target
+
+[Service]
+Type=simple
+ExecStart=/home/valde/Git/.dotfiles/Scripts/internetResume.sh
+
+[Install]
+WantedBy=suspend.target
+

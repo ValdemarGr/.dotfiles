@@ -2,19 +2,18 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/valde/.oh-my-zsh"
-export PATH=$PATH:~/Git/.dotfiles/Scripts
-export PATH=$HOME/Local/flutter/bin:$PATH
-export PATH=$PATH:/home/valde/.gem/ruby/2.5.0/bin
+    export ZSH="/home/valde/.oh-my-zsh"
+# export JAVA_OPTS=$JAVA_OPTS:"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=45217" 
 
-source $HOME/Git/.dotfiles/Scripts/h.sh
+source "$HOME/.bashrc"
+
+export TERM='xterm-256color'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -101,25 +100,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias scrotclip= 'scrot -s ~/foo.png && xclip ~/foo.png && rm ~/foo.png'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Idiot proof deletion
-alias tt="bash ~/Git/.dotfiles/Scripts/totrash"
-source ~/anaconda3/etc/profile.d/conda.sh
-source /usr/share/autojump/autojump.zsh
-export PRIMARY_MONITOR=eDP-1
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+autoload bashcompinit
+bashcompinit
+source /etc/bash_completion.d/google-cloud-sdk 
 
-# Emacs tramp fix
+alias ng='~/.npm-global/bin/ng'
+
+source $HOME/anaconda3/etc/profile.d/conda.sh
+source /usr/share/autojump/autojump.zsh
+conda activate arch
+
 if [[ "$TERM" == "dumb" ]]
 then
-  unsetopt zle
-  unsetopt prompt_cr
-  unsetopt prompt_subst
-  unfunction precmd
-  unfunction preexec
-  PS1='$ '
+    unsetopt zle
+    unsetopt prompt_cr
+    unsetopt prompt_subst
+    unfunction precmd
+    unfunction preexec
+    PS1='$ '
 fi
+[ $TERM = "dumb" ] && unsetopt zle && PS1='$ '
 

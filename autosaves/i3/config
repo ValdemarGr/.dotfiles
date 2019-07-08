@@ -6,8 +6,9 @@ set $bg ~/Git/.dotfiles/wp/m.blurnature.jpg
 set $windowserverport         6969
 set $windowserverscript       ~/Git/.dotfiles/Scripts/windowserver.py
 set $windowclient             ~/Git/.dotfiles/Scripts/windowclient.sh
+set $wallpaper_random             ~/Git/.dotfiles/Scripts/wallpaper_random.sh
 set $poly		      ~/Git/.dotfiles/Scripts/launch_poly.sh
-set $gap 10
+set $gap 12
 
 
 # [INIT]
@@ -16,35 +17,25 @@ for_window [instance="zenpad"] move scratchpad;
 font pango:System San Francisco Display 12
 
 
-#exec --no-startup-id xrandr --output HDMI-1-1 --mode 1920x1080 --right-of DP-5 
-#exec --no-startup-id xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
-#exec --no-startup-id xrandr --addmode eDP-1 1920x1080_60.00
-#exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080_60.00
-
-#exec --no-startup-id compton -b -c --vsync opengl
-#exec --no-startup-id tmux new-session -d -s compton 'compton -b -c --vsync opengl'
-exec --no-startup-id feh --bg-scale $bg
+#exec --no-startup-id feh --bg-scale $bg
+exec bash $wallpaper_random
 exec --no-startup-id exec /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 workspace 1 output eDP-1
 
-gaps inner 10
-gaps outer 10
+gaps inner 12
+gaps outer 12
 
-exec --no-startup-id bash $poly
-
-bindsym $mod+w gaps inner current set 0; gaps outer current set 0
-bindsym $mod+s gaps inner current set $gap; gaps outer current set $gap
 
 exec --no-startup-id setxkbmap -layout dk
 
 #bar {
-   #font pango:Menlo for Powerline 11, FontAwesome 11
+#  font pango:Menlo for Powerline 11, FontAwesome 11
 #	position top
-  # tray_output none
+#  #tray_output none
 #  #1status_command i3blocks
- #  status_command python3 ~/Git/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery pasink pasource date time -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
-   #status_command i3status
+#  status_command python3 ~/Git/bumblebee-status/bumblebee-status -m nic disk:root cpu memory battery pasink pasource date time -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
+#  #status_command i3status
 #  colors {
 #    background #1d2021
 # 
@@ -54,7 +45,7 @@ exec --no-startup-id setxkbmap -layout dk
 #  }
 #}
 
-new_window pixel 1
+new_window pixel 3
 
 set $FOCUS #B1B541
 set $UNFOCUS #3c3b37
@@ -67,13 +58,11 @@ client.background 		$UNFOCUS
 
 focus_follows_mouse no
 
-#exec --no-startup-id tmux new-session -d -s windowserver 'python3 $windowserverscript $windowserverport'
-exec --no-startup-id python3 $windowserverscript $windowserverport
+exec --no-startup-id python $windowserverscript $windowserverport
 
 # [KEYBINDS]
-#bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] floating disable; [instance="dropdown"] fullscreen toggle
-#bindsym $mod+u exec zen && fullscreen toggle  
 bindsym $mod+u exec bash $windowclient $windowserverport "zenpad"
+
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
@@ -89,13 +78,19 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym $mod+q exec killall -9 polybar
+bindsym $mod+a exec killall -9 polybar; exec bash $poly
+
+bindsym $mod+s gaps inner current set $gap; gaps outer current set $gap
+bindsym $mod+w gaps inner current set 0; gaps outer current set 0
+
 bindsym $mod+Return exec $term -e zsh
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -combi-modi drun,run -show combi" 
+bindsym $mod+e exec "rofimoji"
 
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-# bindsym $mod+l exec --no-startup-id i3lock-fancy
 bindsym $mod+ae focus right
 
 bindsym $mod+Left focus left
@@ -121,31 +116,20 @@ bindsym $mod+v split v
 
 bindsym $mod+f fullscreen toggle
 
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
-
 bindsym $mod+Shift+space floating toggle
 
 bindsym $mod+space focus mode_toggle
 
-bindsym $mod+a focus parent
-
 bindsym $mod+Control+Right move workspace to output right
 bindsym $mod+Control+Left move workspace to output left
 
-#bindsym $mod+c exec --no-startup-id python3 $windowclient $windowserverport
-#bindsym $mod+g exec --no-startup-id python3 $windowclient $windowserverport goto
-#bindsym $mod+n exec --no-startup-id python3 $windowclient $windowserverport rename
-#bindsym $mod+m exec --no-startup-id python3 $windowclient $windowserverport move
 bindsym $mod+g exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "goto" %s' -P 'go to workspace: '
+
 bindsym $mod+n exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "rename" %s' -P 'rename workspace: '
 bindsym $mod+m exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "move" %s' -P 'move to workspace: '
 bindsym $mod+i exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "icon" %s' -P 'rename workspace icon: '
+bindsym $mod+p exec bash $windowclient $windowserverport "poly"
 
-#bindsym $mod+g exec --no-startup-id i3-input -F 'exec "echo "gotows,%s" | nc -U $windowserverport"' -P 'go to workspace: '
-#bindsym $mod+n exec --no-startup-id i3-input -F 'exec "echo "renamews,%s" | nc -U $windowserverport"' -P 'rename workspace: '
-#bindsym $mod+m exec --no-startup-id i3-input -F 'exec "echo "movews,%s" | nc -U $windowserverport"' -P 'move to workspace: '
 
 bindsym $mod+b exec --no-startup-id i3-input -F 'exec xrandr --output eDP-1 --brightness %s' -P 'set brightness: '
 
@@ -175,6 +159,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+r mode "resize"
+
 mode "resize" {
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
@@ -186,7 +172,8 @@ mode "resize" {
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-	bindsym Shift+Left resize shrink width 1 px or 1 ppt
+
+        bindsym Shift+Left resize shrink width 1 px or 1 ppt
         bindsym Shift+Down resize grow height 1 px or 1 ppt
         bindsym Shift+Up resize shrink height 1 px or 1 ppt
         bindsym Shift+Right resize grow width 1 px or 1 ppt
@@ -195,4 +182,3 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"

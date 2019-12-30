@@ -1,0 +1,13 @@
+[Unit]
+Description=Custom mirror server for file sync
+After=network.target
+
+[Service]
+User=valde
+Group=valde
+Type=simple
+ExecStart=/bin/mirror server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -113,7 +113,7 @@ try:
                     if proc.name() == PROCNAME:
                         print(proc.name())
                         proc.kill()
-                        POLY_RUNNING = False
+                POLY_RUNNING = False
             else:
                 subprocess.call("bash launch_poly.sh", shell=True)
                 POLY_RUNNING = True

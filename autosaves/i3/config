@@ -15,7 +15,7 @@ set $gap 12
 exec $term -name zenpad -b 150
 for_window [instance="zenpad"] move scratchpad;
 font pango:System San Francisco Display 12
-
+exec xcompmgr
 
 #exec --no-startup-id feh --bg-scale $bg
 exec bash $wallpaper_random
@@ -58,7 +58,7 @@ client.background 		$UNFOCUS
 
 focus_follows_mouse no
 
-exec --no-startup-id python $windowserverscript $windowserverport
+exec --no-startup-id python3 $windowserverscript $windowserverport
 
 # [KEYBINDS]
 bindsym $mod+u exec bash $windowclient $windowserverport "zenpad"

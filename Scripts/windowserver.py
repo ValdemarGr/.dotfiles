@@ -87,7 +87,7 @@ try:
             num = int(args[0])
             wss = i3.get_workspaces()
             for ws in wss:
-                n = ws['name']
+                n = ws.__dict__['name']
                 p = re.search('^\s*[0-9]*', n).group(0)
                 if p.isdigit() and int(p) == num:
                     i3.command(f"workspace {n}")
@@ -98,7 +98,7 @@ try:
             num = int(args[0])
             wss = i3.get_workspaces()
             for ws in wss:
-                n = ws['name']
+                n = ws.__dict__['name']
                 p = re.search('^\s*[0-9]', n).group(0)
                 if p.isdigit() and int(p) == num:
                     i3.command(f"move container to workspace {n}")

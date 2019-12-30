@@ -35,11 +35,15 @@ for choice in chosen:
     print(choice[MESSAGE])
     outdir = os.path.expanduser(choice[LOCAL_DIRECTORY])
     
-    if cfg[IS_DIR] == True:
+    if choice[IS_DIR] == True:
         copy_tree(os.path.expanduser(choice[SAVE_DIRECTORY]), outdir)
     else:
-        if not os.path.exists(outdir):
-            os.mkdir(os.path.dirname(outdir))
+        try:
+            if not os.path.exists(outdir):
+                os.makedirs(os.path.dirname(outdir))
+        except:
+            pass
+
 
         copyfile(os.path.expanduser(choice[SAVE_DIRECTORY]), outdir)
 

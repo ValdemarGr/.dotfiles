@@ -35,7 +35,7 @@ shade6 = #E6EE9C
 monitor = ${env:MONITOR:}
 width = 13%
 height = 30
-offset-y = 11
+offset-y = 8
 override-redirect = true
 radius = 3
 

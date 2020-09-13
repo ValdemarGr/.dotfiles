@@ -34,7 +34,7 @@ URxvt.letterSpace: -1
 URxvt.internalBorder: 35
 
 URxvt*depth: 32
-URxvt*background: [75]#1D2426
+URxvt*background: [100]#1D2426
 
 Xft*dpi:                130
 Xft*antialias:          true

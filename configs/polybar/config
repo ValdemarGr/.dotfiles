@@ -71,12 +71,14 @@ offset-x = 3%
 modules-center = invis
 tray-position = center
 tray-background = ${color.bg}
+background = ${color.alpha}
 
 [bar/center]
 inherit = bar/root
 modules-center = i3
 offset-x = 43%
-#background = ${color.bg}
+background = ${color.alpha}
+
 
 [bar/right]
 inherit = bar/root
@@ -88,8 +90,8 @@ background = ${color.bg}
 [module/invis]
 type = custom/text
 content = n
-content-background = "#00000000"
-content-foreground = "#00000000"
+content-background = ${color.alpha}
+content-foreground = ${color.alpha}
 
 label = ""
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+if pgrep polybar; then killall -9 polybar; fi
+
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
     MONITOR=$m polybar --reload center &

@@ -12,6 +12,11 @@ port = sys.argv[1]
 sd = socket.socket()
 sd.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
+pid = str(os.getpid())
+f = open('/tmp/windowserver', 'w')
+f.write(pid)
+f.close()
+
 POLY_RUNNING = False
 
 

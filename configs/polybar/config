@@ -18,7 +18,7 @@
 
 [color]
 
-bg = #474747
+bg = #242424
 fg = #D9DBDF
 fg-alt = #141C21
 
@@ -32,6 +32,7 @@ shade5 = #DCE775
 shade6 = #E6EE9C
 
 [bar/root]
+monitor = ${env:MONITOR:}
 width = 13%
 height = 30
 offset-y = 11
@@ -51,7 +52,7 @@ font-7 = fixed:pixelsize=18;2
 ; empty bar to achieve the needed space, without this, the modules 'float on top of the windows'
 ; You can spot the 1 px sized bar on the left if you insist to try.
 inherit = bar/root
-height = 16
+height = 22
 offset-y = 0
 width = 1
 override-redirect = false
@@ -59,16 +60,23 @@ modules-left = invis
 
 [bar/left]
 inherit = bar/root
-offset-x = 10%
-width = 100
+offset-x = 14%
+width = 14%
 background = ${color.bg}
-modules-center = cpu
+modules-center = spotify
+
+[bar/tray]
+inherit = bar/root
+offset-x = 3%
+modules-center = invis
+tray-position = center
+tray-background = ${color.bg}
 
 [bar/center]
 inherit = bar/root
 modules-center = i3
 offset-x = 43%
-background = ${color.bg}
+#background = ${color.bg}
 
 [bar/right]
 inherit = bar/root
@@ -136,20 +144,23 @@ format = <label-state> <label-mode>
 ;# Selected
 label-focused = %name%
 label-focused-padding = 2
-label-focused-background = #242424
+label-focused-background = #474747
 
 ;# Always
 label-unfocused = %name%
 label-unfocused-padding = 2
+label-unfocused-background = ${color.bg}
 
 ;# Vis
 label-visible = %name%
 label-visible-padding = 2
+label-visible-background = ${color.bg}
 
 ;# Sep
 label-separator = |
 label-separator-font = 8
 label-separator-foreground = #ffb52a
+label-separator-background = ${color.bg}
 
 ;# Config
 index-sort = true
@@ -194,3 +205,18 @@ content = |
 content-font = 8
 content-padding = 2
 content-foreground = #ffb52a
+
+;# ███████╗██████╗  ██████╗ ████████╗██╗███████╗██╗   ██╗
+;# ██╔════╝██╔══██╗██╔═══██╗╚══██╔══╝██║██╔════╝╚██╗ ██╔╝
+;# ███████╗██████╔╝██║   ██║   ██║   ██║█████╗   ╚████╔╝
+;# ╚════██║██╔═══╝ ██║   ██║   ██║   ██║██╔══╝    ╚██╔╝
+;# ███████║██║     ╚██████╔╝   ██║   ██║██║        ██║
+;# ╚══════╝╚═╝      ╚═════╝    ╚═╝   ╚═╝╚═╝        ╚═╝
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python ./spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
+format-background = ${color.bg}

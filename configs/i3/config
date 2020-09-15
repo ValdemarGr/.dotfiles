@@ -35,6 +35,9 @@ bindsym $mod+m exec --no-startup-id i3-input -F 'exec bash $windowclient $window
 bindsym $mod+i exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "icon" %s' -P 'rename workspace icon: '
 bindsym $mod+u exec bash $windowclient $windowserverport "zenpad"
 
+bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+
+
 bindsym $mod+Shift+Control+Right move workspace to output right
 bindsym $mod+Shift+Control+Left move workspace to output left
 
@@ -113,7 +116,6 @@ bindsym $mod+Shift+Right move right
 
 bindsym $mod+Control+Right workspace next_on_output
 bindsym $mod+Control+Left workspace prev_on_output
-
 
 # split in horizontal orientation
 bindsym $mod+h split h

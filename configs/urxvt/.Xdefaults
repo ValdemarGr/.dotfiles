@@ -1,4 +1,4 @@
-URxvt.perl-ext-common:  ...,font-size
+URxvt.perl-ext-common: font-size,selection-to-clipboard
 
 *background: #1D2426
 *foreground: #AB9C71

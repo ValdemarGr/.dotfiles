@@ -76,8 +76,8 @@ background = ${color.alpha}
 [bar/center]
 inherit = bar/root
 modules-center = i3
-offset-x = 0; 43%
-width = 100%
+offset-x = 25%; 43%
+width = 50%
 background = ${color.alpha}
 
 

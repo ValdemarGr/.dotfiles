@@ -11,3 +11,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
 sudo dpkg -i ripgrep_11.0.2_amd64.deb
 rm ripgrep_11.0.2_amd64.deb
+
+DIR=$(pwd)
+mkdir -p /tmp/tflsp
+cd /tmp/tflsp
+curl -LO https://github.com/juliosueiras/terraform-lsp/releases/download/v0.0.11-beta2/terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
+tar -xvzf terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
+sudo mv /tmp/tflsp/terraform-lsp /usr/local/bin

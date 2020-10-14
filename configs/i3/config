@@ -27,6 +27,9 @@ exec --no-startup-id $polylaunch
 exec --no-startup-id picom
 exec --no-startup-id bash ~/Git/.dotfiles/configs/i3/wp.sh
 
+bindsym $mod+w gaps inner current set 0; gaps outer current set 0
+bindsym $mod+q gaps inner current set 12; gaps outer current set 12
+
 bindsym $mod+p exec --no-startup-id $polylaunch
 bindsym $mod+s exec --no-startup-id $windowserverscript $windowserverport
 bindsym $mod+g exec --no-startup-id i3-input -F 'exec bash $windowclient $windowserverport "goto" %s' -P 'go to workspace: '
@@ -77,6 +80,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term -b 0
 
 # kill focused window
 bindsym $mod+Shift+q kill

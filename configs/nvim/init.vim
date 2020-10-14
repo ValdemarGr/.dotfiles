@@ -13,9 +13,13 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+set cursorcolumn
 
 set number relativenumber
 set nu rnu
+
+set ttimeout
+set ttimeoutlen=0
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -32,6 +36,12 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
 
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdcommenter'
+Plug 'jiangmiao/auto-pairs'
+Plug 'easymotion/vim-easymotion'
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 let g:gruvbox_contrast_dark='hard'
@@ -43,3 +53,4 @@ let mapleader = " "
 
 runtime metals.vim 
 runtime keys.vim
+runtime easymotion.vim

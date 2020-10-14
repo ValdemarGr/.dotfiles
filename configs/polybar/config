@@ -35,7 +35,7 @@ shade6 = #E6EE9C
 monitor = ${env:MONITOR:}
 width = 13%
 height = 30
-offset-y = 8
+offset-y = 0
 override-redirect = true
 radius = 3
 
@@ -52,8 +52,8 @@ font-7 = fixed:pixelsize=18;2
 ; empty bar to achieve the needed space, without this, the modules 'float on top of the windows'
 ; You can spot the 1 px sized bar on the left if you insist to try.
 inherit = bar/root
-height = 22
-offset-y = 0
+height = 30
+offset-y = 0 
 width = 1
 override-redirect = false
 modules-left = invis

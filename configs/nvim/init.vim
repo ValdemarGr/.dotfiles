@@ -21,7 +21,7 @@ set nu rnu
 set ttimeout
 set ttimeoutlen=0
 
-set colorcolumn=80
+set colorcolumn=120
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
@@ -57,3 +57,13 @@ let mapleader = " "
 runtime metals.vim 
 runtime keys.vim
 runtime easymotion.vim
+
+let g:fzf_preview_window = 'right:48%'
+let g:fzf_buffers_jump = 1
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)
+
+

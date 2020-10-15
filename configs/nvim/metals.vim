@@ -33,3 +33,19 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+nmap <leader>rn <Plug>(coc-rename)
+
+nmap <leader>fo :call CocAction('format')<CR>
+
+" Use `:Format` to format current buffer
+"command! -nargs=0 Format :call CocAction('format')

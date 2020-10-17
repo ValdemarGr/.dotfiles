@@ -9,10 +9,11 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <silent> <leader>// :<C-u>BLines!<cr>
-nnoremap <silent> <leader>gf :<C-u>Rg!<cr>
+nnoremap <silent> <leader>gf :<C-u>RG!<cr>
+nnoremap <silent> <leader>gc :CocSearch 
 
-nnoremap <leader>fw :Rg! <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>fwc :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>rg :RG! <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>rc :CocSearch <C-R>=expand("<cword>")<CR><CR>
 
 command! -nargs=0 RCfg :source ~/.config/nvim/init.vim
 

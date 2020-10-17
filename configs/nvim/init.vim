@@ -58,16 +58,16 @@ set background=dark
 
 let mapleader = " "
 
-runtime metals.vim 
-runtime keys.vim
-runtime easymotion.vim
-
 let g:fzf_preview_window = 'right:48%'
 let g:fzf_buffers_jump = 1
 
-command! -bang -nargs=* Rg
+command! -bang -nargs=* RG
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
+
+runtime metals.vim 
+runtime keys.vim
+runtime easymotion.vim
 
 

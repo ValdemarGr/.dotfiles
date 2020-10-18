@@ -45,6 +45,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'hashivim/vim-terraform'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 

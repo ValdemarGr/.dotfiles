@@ -17,3 +17,5 @@ nnoremap <leader>rc :CocSearch <C-R>=expand("<cword>")<CR><CR>
 
 command! -nargs=0 RCfg :source ~/.config/nvim/init.vim
 
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>

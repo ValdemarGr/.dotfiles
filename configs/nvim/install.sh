@@ -18,3 +18,9 @@ cd /tmp/tflsp
 curl -LO https://github.com/juliosueiras/terraform-lsp/releases/download/v0.0.11-beta2/terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
 tar -xvzf terraform-lsp_0.0.11-beta2_linux_amd64.tar.gz
 sudo mv /tmp/tflsp/terraform-lsp /usr/local/bin
+
+curl -LO https://github.com/sharkdp/bat/releases/download/v0.16.0/bat_0.16.0_amd64.deb
+mkdir -p /tmp/bat
+mv bat_0.16.0_amd64.deb /tmp/bat
+sudo dpkg -i /tmp/bat/bat_0.16.0_amd64.deb
+

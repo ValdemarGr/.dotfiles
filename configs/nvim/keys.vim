@@ -1,3 +1,5 @@
+map Q <Nop>
+
 nnoremap <silent> <leader>p :<C-u>GFiles!<cr> 
 nnoremap <silent> <leader>o :<C-u>GFiles!?<cr> 
 nnoremap <silent> <leader>i :<C-u>Files!<cr> 
@@ -19,3 +21,5 @@ command! -nargs=0 RCfg :source ~/.config/nvim/init.vim
 
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
+
+nnoremap <leader>gs :G<CR>

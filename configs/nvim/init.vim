@@ -51,7 +51,7 @@ call plug#end()
 
 let g:gruvbox_contrast_dark='hard'
 
-let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!git/*"'
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!\.git/*"'
 let $FZF_DEFAULT_OPTS="--ansi --layout reverse --preview 'bat --color always --style=header,grid --line-range :300 {}'"
 
 colorscheme gruvbox

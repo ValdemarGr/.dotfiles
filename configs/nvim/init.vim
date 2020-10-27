@@ -27,6 +27,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sierra'
 Plug 'morhetz/gruvbox'

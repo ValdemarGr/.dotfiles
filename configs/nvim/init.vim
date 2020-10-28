@@ -27,18 +27,23 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'peitalin/vim-jsx-typescript'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sierra'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
+
+"Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
@@ -49,6 +54,10 @@ Plug 'hashivim/vim-terraform'
 Plug 'preservim/nerdtree'
 
 call plug#end()
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 let g:gruvbox_contrast_dark='hard'
 
@@ -72,4 +81,31 @@ runtime metals.vim
 runtime keys.vim
 runtime easymotion.vim
 
+"" dark red
+"hi tsxTagName guifg=#E06C75
+"hi tsxComponentName guifg=#E06C75
+"hi tsxCloseComponentName guifg=#E06C75
 
+"" orange
+"hi tsxCloseString guifg=#F99575
+"hi tsxCloseTag guifg=#F99575
+"hi tsxCloseTagName guifg=#F99575
+"hi tsxAttributeBraces guifg=#F99575
+"hi tsxEqual guifg=#F99575
+
+"" yellow
+"hi tsxAttrib guifg=#F8BD7F cterm=italic
+
+"" light-grey
+"hi tsxTypeBraces guifg=#999999
+"" dark-grey
+"hi tsxTypes guifg=#666666
+
+"hi ReactState guifg=#C176A7
+"hi ReactProps guifg=#D19A66
+"hi ApolloGraphQL guifg=#CB886B
+"hi Events ctermfg=204 guifg=#56B6C2
+"hi ReduxKeywords ctermfg=204 guifg=#C678DD
+"hi ReduxHooksKeywords ctermfg=204 guifg=#C176A7
+"hi WebBrowser ctermfg=204 guifg=#56B6C2
+"hi ReactLifeCycleMethods ctermfg=204 guifg=#D19A66

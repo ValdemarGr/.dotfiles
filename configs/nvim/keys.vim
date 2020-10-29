@@ -22,8 +22,8 @@ command! -nargs=0 RCfg :source ~/.config/nvim/init.vim
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
-nnoremap <leader>gs :G<CR>
-nnoremap <leader>gp :G push<CR>
+nnoremap <silent> <leader>gs :G<CR>
+nnoremap <silent> <leader>gp :G push<CR>
 
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>

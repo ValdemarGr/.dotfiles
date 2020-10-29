@@ -53,6 +53,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'hashivim/vim-terraform'
 Plug 'preservim/nerdtree'
 
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

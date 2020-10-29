@@ -45,6 +45,7 @@ nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
 nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
+nnoremap <silent> <leader>j :call CocActionAsync('showSignatureHelp')<CR>
 
 nmap <leader>rn <Plug>(coc-rename)
 

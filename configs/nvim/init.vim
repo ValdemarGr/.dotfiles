@@ -54,6 +54,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'preservim/nerdtree'
 
 Plug 'junegunn/goyo.vim'
+Plug 'vlime/vlime', {'rtp': 'vim/'}
 
 call plug#end()
 

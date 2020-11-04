@@ -56,6 +56,10 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'vlime/vlime', {'rtp': 'vim/'}
 
+Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+
 call plug#end()
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

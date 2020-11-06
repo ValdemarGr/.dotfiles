@@ -59,3 +59,6 @@ nmap <leader>qf <Plug>(coc-fix-current)
 
 xmap <leader>a <Plug>(coc-codeaction-line)
 nmap <leader>a <Plug>(coc-codeaction-line)
+
+" coc listens for esc, not C-c
+inoremap <C-c> <Esc>

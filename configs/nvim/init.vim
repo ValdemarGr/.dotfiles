@@ -56,7 +56,13 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
 Plug 'vlime/vlime', {'rtp': 'vim/'}
 
+Plug 'lifepillar/pgsql.vim'
+Plug 'google/vim-maktaba'
+Plug 'bazelbuild/vim-bazel'
+
 call plug#end()
+
+let g:sql_type_default = 'pgsql'
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear

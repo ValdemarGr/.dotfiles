@@ -60,6 +60,10 @@ Plug 'lifepillar/pgsql.vim'
 Plug 'google/vim-maktaba'
 Plug 'bazelbuild/vim-bazel'
 
+Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+
 call plug#end()
 
 let g:sql_type_default = 'pgsql'
@@ -67,6 +71,8 @@ let g:sql_type_default = 'pgsql'
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
+set diffopt+=vertical
 
 let g:gruvbox_contrast_dark='hard'
 

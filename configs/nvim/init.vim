@@ -65,6 +65,7 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 Plug 'farmergreg/vim-lastplace'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -93,6 +94,8 @@ command! -bang -nargs=* RG
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
+
+let g:vimwiki_list = [{'path': '~/Git/.dotfiles/wiki/', 'path_html':'~/Git/.dotfiles/html/'}]
 
 runtime metals.vim 
 runtime keys.vim

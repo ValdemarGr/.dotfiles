@@ -1,0 +1,7 @@
+= Masters and Work =
+
+== Masters ==
+- [X] Intuition of *Hindley-Milner*
+
+== Work ==
+

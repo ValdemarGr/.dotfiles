@@ -66,6 +66,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 Plug 'farmergreg/vim-lastplace'
 Plug 'vimwiki/vimwiki'
+Plug 'tpope/vim-dadbod'
 
 call plug#end()
 

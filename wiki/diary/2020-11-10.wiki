@@ -4,4 +4,5 @@
 - [X] Intuition of *Hindley-Milner*
 
 == Work ==
-
+- [X] Get websock-performance up and running
+- [X] Fix operation order problem

@@ -66,13 +66,16 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 Plug 'farmergreg/vim-lastplace'
 Plug 'vimwiki/vimwiki'
+
 Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
 let g:sql_type_default = 'pgsql'
+let g:ftplugin_sql_omni_key = '<C-j>'
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear

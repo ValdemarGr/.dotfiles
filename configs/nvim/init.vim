@@ -68,6 +68,8 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-dadbod'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 let g:sql_type_default = 'pgsql'

@@ -26,7 +26,7 @@ URxvt.perl-ext-common: font-size,selection-to-clipboard
 ! URxvt*shading:             50
 
 URxvt*geometry:            112x22
-URxvt*font:                xft:Menlo for Powerline:size=12
+URxvt*font:                xft:FiraCode Nerd Font Mono:size=12:style=Regular
 URxvt*urlLauncher:         google-chrome
 URxvt*scrollBar:           false
 URxvt*scrollBar_right:     true

@@ -1,8 +1,8 @@
 = Home and Masters =
 
 == Home ==
-- [ ] Fix clothes
+- [.] Fix clothes
 - [X] Gym
 
 == Masters ==
-- [ ] Implement HM types
+- [.] Implement HM types

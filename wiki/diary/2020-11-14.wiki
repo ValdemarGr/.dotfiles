@@ -1,4 +1,4 @@
 = Masters =
 
 == Masters ==
-- [ ] Implement just normal HM
+- [.] Implement just normal HM

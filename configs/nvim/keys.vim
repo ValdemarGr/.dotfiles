@@ -12,7 +12,7 @@ nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <silent> <leader>// :<C-u>BLines!<cr>
 nnoremap <silent> <leader>sg :<C-u>RG!<cr>
-nnoremap <silent> <leader>so :CocSearch 
+nnoremap <leader>so :CocSearch 
 
 nnoremap <leader>cg :RG! <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>co :CocSearch <C-R>=expand("<cword>")<CR><CR>
@@ -30,3 +30,5 @@ nmap <leader>gu :diffget //2<CR>
 
 nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
 nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
+
+nmap <silent> <leader> db :DBUI<CR>

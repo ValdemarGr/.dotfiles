@@ -1,0 +1,9 @@
+= Assignment and Masters =
+
+== Assignment ==
+- [X] First exercise
+- [X] Second exercise
+
+== Masters ==
+- [X] Program entrypoint for typechecker
+- [ ] ADT typechecking

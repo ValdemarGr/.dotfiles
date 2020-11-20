@@ -1,0 +1,7 @@
+= Conc and Masters =
+
+== Conc ==
+- [X] Do #21
+ 
+== Masters == 
+- [X] Decide on type signatures

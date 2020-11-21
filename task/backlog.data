@@ -2,3 +2,9 @@
 {"description":"Hello","entry":"20201121T010610Z","modified":"20201121T010729Z","status":"pending","uuid":"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"}
 {"description":"Algebraic data type","entry":"20201121T010610Z","modified":"20201121T010749Z","status":"pending","uuid":"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"}
 {"description":"Algebraic data type","entry":"20201121T010610Z","modified":"20201121T010934Z","project":"thesis","status":"pending","uuid":"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"}
+{"description":"Algebraic data type","entry":"20201121T010610Z","modified":"20201121T024019Z","priority":"M","project":"thesis","status":"pending","uuid":"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"}
+{"description":"Algebraic data type","entry":"20201121T010610Z","modified":"20201121T024031Z","project":"thesis","status":"pending","uuid":"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"}
+{"description":"Call by need, value and name","entry":"20201121T024050Z","modified":"20201121T024050Z","status":"pending","uuid":"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"}
+{"description":"Call by need, value and name","entry":"20201121T024050Z","modified":"20201121T024120Z","project":"thesis","status":"pending","uuid":"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"}
+{"description":"Parsing","entry":"20201121T024145Z","modified":"20201121T024145Z","project":"thesis","status":"pending","uuid":"2167a00e-0a38-477c-9ba8-7019658eece2"}
+{"description":"Typing","entry":"20201121T024152Z","modified":"20201121T024152Z","project":"thesis","status":"pending","uuid":"50d1eefc-f4bd-4d4f-849c-a2a31598c944"}

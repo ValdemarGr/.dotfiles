@@ -1,0 +1,7 @@
+= Masters =
+
+== Masters ==
+- [X] Review current work
+- [ ] Introduce call by value, need and name
+- [ ] Parsing
+- [ ] Typing

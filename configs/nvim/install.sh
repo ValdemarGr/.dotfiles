@@ -24,3 +24,4 @@ mkdir -p /tmp/bat
 mv bat_0.16.0_amd64.deb /tmp/bat
 sudo dpkg -i /tmp/bat/bat_0.16.0_amd64.deb
 
+sudo apt-get install taskwarrior bugwarrior

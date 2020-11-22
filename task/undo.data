@@ -34,3 +34,98 @@ new [description:"Parsing" entry:"1605926505" modified:"1605926505" project:"the
 time 1605926512
 new [description:"Typing" entry:"1605926512" modified:"1605926512" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
 ---
+time 1605973668
+old [description:"Algebraic data type" entry:"1605920770" modified:"1605926431" project:"thesis" status:"pending" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" entry:"1605920770" modified:"1605973668" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605973726
+old [description:"Algebraic data type" entry:"1605920770" modified:"1605973668" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1605999600" entry:"1605920770" modified:"1605973726" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605973726
+old [description:"Call by need, value and name" entry:"1605926450" modified:"1605926480" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1605999600" entry:"1605926450" modified:"1605973726" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1605973726
+old [description:"Parsing" entry:"1605926505" modified:"1605926505" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1605999600" entry:"1605926505" modified:"1605973726" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1605973726
+old [description:"Typing" entry:"1605926512" modified:"1605926512" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [description:"Typing" due:"1605999600" entry:"1605926512" modified:"1605973726" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1605973770
+old [description:"Algebraic data type" due:"1605999600" entry:"1605920770" modified:"1605973726" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1605999601" entry:"1605920770" modified:"1605973770" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605973770
+old [description:"Call by need, value and name" due:"1605999600" entry:"1605926450" modified:"1605973726" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1605999601" entry:"1605926450" modified:"1605973770" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1605973770
+old [description:"Parsing" due:"1605999600" entry:"1605926505" modified:"1605973726" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1605999601" entry:"1605926505" modified:"1605973770" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1605973770
+old [description:"Typing" due:"1605999600" entry:"1605926512" modified:"1605973726" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [description:"Typing" due:"1605999601" entry:"1605926512" modified:"1605973770" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1605973829
+old [description:"Algebraic data type" due:"1605999601" entry:"1605920770" modified:"1605973770" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606035600" entry:"1605920770" modified:"1605973829" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605973829
+old [description:"Call by need, value and name" due:"1605999601" entry:"1605926450" modified:"1605973770" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606035600" entry:"1605926450" modified:"1605973829" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1605973829
+old [description:"Parsing" due:"1605999601" entry:"1605926505" modified:"1605973770" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1606035600" entry:"1605926505" modified:"1605973829" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1605973829
+old [description:"Typing" due:"1605999601" entry:"1605926512" modified:"1605973770" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [description:"Typing" due:"1606035600" entry:"1605926512" modified:"1605973829" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1605973852
+old [description:"Algebraic data type" due:"1606035600" entry:"1605920770" modified:"1605973829" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606086000" entry:"1605920770" modified:"1605973852" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605973852
+old [description:"Call by need, value and name" due:"1606035600" entry:"1605926450" modified:"1605973829" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605973852" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1605973852
+old [description:"Parsing" due:"1606035600" entry:"1605926505" modified:"1605973829" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1606086000" entry:"1605926505" modified:"1605973852" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1605973852
+old [description:"Typing" due:"1606035600" entry:"1605926512" modified:"1605973829" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [description:"Typing" due:"1606086000" entry:"1605926512" modified:"1605973852" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1605974361
+old [description:"Algebraic data type" due:"1606086000" entry:"1605920770" modified:"1605973852" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605974361" project:"thesis" status:"completed" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605974377
+old [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605973852" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605974377" project:"thesis" status:"pending" tags:"next" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1605975514
+old [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605974361" project:"thesis" status:"completed" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975514" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605975526
+old [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975514" project:"thesis" status:"pending" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975526" project:"thesis" status:"completed" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605975588
+new [description:"Algebraic data type" due:"1606086000" entry:"1605975588" modified:"1605975526" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1605975611
+old [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975526" project:"thesis" status:"completed" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975611" project:"thesis" status:"deleted" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1605975649
+old [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605974377" project:"thesis" status:"pending" tags:"next" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605975649" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---

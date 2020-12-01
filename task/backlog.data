@@ -119,3 +119,4 @@
 {"description":"Fix tests","entry":"20201124T231650Z","modified":"20201130T150201Z","project":"tray","start":"20201125T202204Z","status":"pending","uuid":"b2a09624-221d-43b6-852d-b7521577b3d6"}
 {"description":"Compile and run file","due":"20201201T103000Z","entry":"20201130T150146Z","modified":"20201130T150228Z","project":"thesis","status":"pending","tags":["next"],"uuid":"8ed00240-ee7a-4f96-a993-015727246202"}
 {"description":"Graph reducer","due":"20201201T103000Z","entry":"20201130T150146Z","modified":"20201130T171153Z","project":"thesis","status":"pending","tags":["next"],"uuid":"8ed00240-ee7a-4f96-a993-015727246202"}
+{"description":"Graph reducer","due":"20201201T103000Z","entry":"20201130T150146Z","modified":"20201201T001035Z","project":"thesis","status":"pending","uuid":"8ed00240-ee7a-4f96-a993-015727246202"}

@@ -434,3 +434,7 @@ time 1606756313
 old [description:"Compile and run file" due:"1606818600" entry:"1606748506" modified:"1606748548" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
 new [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606756313" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
 ---
+time 1606781435
+old [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606756313" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+new [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606781435" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---

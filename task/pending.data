@@ -7,4 +7,4 @@
 [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1606818600" entry:"1606082172" modified:"1606259713" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
 [description:"Let polymorphism" due:"1606818600" entry:"1606182543" modified:"1606259713" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
 [description:"Fix tests" entry:"1606259810" modified:"1606748521" project:"tray" start:"1606335724" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
-[description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606756313" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+[description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606781435" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]

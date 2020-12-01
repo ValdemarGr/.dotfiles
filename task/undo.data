@@ -129,3 +129,308 @@ time 1605975649
 old [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605974377" project:"thesis" status:"pending" tags:"next" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
 new [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605975649" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
 ---
+time 1606057054
+old [description:"Algebraic data type" due:"1606086000" entry:"1605975588" modified:"1605975526" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057054" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057090
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057054" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057090" project:"thesis" start:"1606057090" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057098
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057090" project:"thesis" start:"1606057090" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057098" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057107
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057098" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057107" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057118
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057107" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057118" project:"thesis" start:"1606057118" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057122
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057118" project:"thesis" start:"1606057118" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057122" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606057129
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057122" project:"thesis" status:"pending" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057129" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606065316
+old [description:"Parsing" due:"1606086000" entry:"1605926505" modified:"1605973852" project:"thesis" status:"pending" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1606086000" end:"1606065315" entry:"1605926505" modified:"1606065316" project:"thesis" status:"deleted" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1606081047
+new [description:"Introduce denotional semantics" entry:"1606081047" modified:"1606081047" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606081062
+old [description:"Introduce denotional semantics" entry:"1606081047" modified:"1606081047" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+new [description:"Introduce denotional semantics" due:"1606086000" entry:"1606081047" modified:"1606081062" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606081085
+old [description:"Typing" due:"1606086000" entry:"1605926512" modified:"1605973852" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606086000" entry:"1605926512" modified:"1606081085" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606081679
+old [description:"Call by need, value and name" due:"1606086000" entry:"1605926450" modified:"1605975649" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1607166000" entry:"1605926450" modified:"1606081679" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1606081679
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606086000" entry:"1605926512" modified:"1606081085" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1607166000" entry:"1605926512" modified:"1606081679" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606081679
+old [description:"Introduce denotional semantics" due:"1606086000" entry:"1606081047" modified:"1606081062" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+new [description:"Introduce denotional semantics" due:"1607166000" entry:"1606081047" modified:"1606081679" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606081679
+old [description:"Parsing" due:"1606086000" end:"1606065315" entry:"1605926505" modified:"1606065316" project:"thesis" status:"deleted" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1607166000" end:"1606065315" entry:"1605926505" modified:"1606081679" project:"thesis" status:"deleted" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1606081679
+old [description:"Algebraic data type" due:"1606086000" end:"1606057054" entry:"1605975588" modified:"1606057129" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1607166000" end:"1606057054" entry:"1605975588" modified:"1606081679" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606081679
+old [description:"Algebraic data type" due:"1606086000" end:"1605974361" entry:"1605920770" modified:"1605975611" project:"thesis" status:"deleted" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1607166000" end:"1605974361" entry:"1605920770" modified:"1606081679" project:"thesis" status:"deleted" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1606081718
+old [description:"Call by need, value and name" due:"1607166000" entry:"1605926450" modified:"1606081679" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606213800" entry:"1605926450" modified:"1606081718" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1606081718
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1607166000" entry:"1605926512" modified:"1606081679" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606081718" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606081718
+old [description:"Introduce denotional semantics" due:"1607166000" entry:"1606081047" modified:"1606081679" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+new [description:"Introduce denotional semantics" due:"1606213800" entry:"1606081047" modified:"1606081718" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606082017
+new [description:"HM Rules, sets, maps and term" entry:"1606082017" modified:"1606082017" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606082052
+new [description:"HM Algorithm W inference" entry:"1606082052" modified:"1606082052" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1606082077
+new [description:"Algorith W errors and constraint solving" entry:"1606082077" modified:"1606082077" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1606082156
+new [description:"High level encoding" entry:"1606082156" modified:"1606082156" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1606082172
+new [description:"HM space and time complexity" entry:"1606082172" modified:"1606082172" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1606082271
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606081718" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082271" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606082285
+old [description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082271" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082285" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606082310
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082285" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082310" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606082316
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082310" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082316" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606082321
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082316" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082321" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606082358
+old [description:"HM Rules, sets, maps and term" entry:"1606082017" modified:"1606082017" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" entry:"1606082017" modified:"1606082358" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606082358
+old [description:"HM Algorithm W inference" entry:"1606082052" modified:"1606082052" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" entry:"1606082052" modified:"1606082358" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1606082358
+old [description:"Algorith W errors and constraint solving" entry:"1606082077" modified:"1606082077" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" entry:"1606082077" modified:"1606082358" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1606082358
+old [description:"High level encoding" entry:"1606082156" modified:"1606082156" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" entry:"1606082156" modified:"1606082358" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1606082358
+old [description:"HM space and time complexity" entry:"1606082172" modified:"1606082172" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" entry:"1606082172" modified:"1606082358" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1606082436
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" entry:"1606082017" modified:"1606082358" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606213800" entry:"1606082017" modified:"1606082436" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606082436
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" entry:"1606082052" modified:"1606082358" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1606213800" entry:"1606082052" modified:"1606082436" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1606082436
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" entry:"1606082077" modified:"1606082358" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1606213800" entry:"1606082077" modified:"1606082436" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1606082436
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" entry:"1606082156" modified:"1606082358" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1606213800" entry:"1606082156" modified:"1606082436" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1606082436
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" entry:"1606082172" modified:"1606082358" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1606213800" entry:"1606082172" modified:"1606082436" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1606182222
+old [description:"Introduce denotional semantics" due:"1606213800" entry:"1606081047" modified:"1606081718" project:"thesis" status:"pending" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+new [description:"Introduce denotional semantics" due:"1606213800" end:"1606182222" entry:"1606081047" modified:"1606182222" project:"thesis" status:"completed" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606182251
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606213800" entry:"1606082017" modified:"1606082436" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606213800" entry:"1606082017" modified:"1606182251" project:"thesis" status:"pending" tags:"next" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606182543
+new [description:"Let polymorphism" entry:"1606182543" modified:"1606182543" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1606182576
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606082321" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606182576" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606182592
+old [description:"Let polymorphism" entry:"1606182543" modified:"1606182543" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1606818600" entry:"1606182543" modified:"1606182592" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1606182604
+old [description:"Let polymorphism" due:"1606818600" entry:"1606182543" modified:"1606182592" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1606213800" entry:"1606182543" modified:"1606182604" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1606259713
+old [description:"Call by need, value and name" due:"1606213800" entry:"1605926450" modified:"1606081718" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1606818600" entry:"1605926450" modified:"1606259713" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1606213800" entry:"1605926512" modified:"1606182576" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1606818600" entry:"1605926512" modified:"1606259713" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606213800" entry:"1606082017" modified:"1606182251" project:"thesis" status:"pending" tags:"next" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606818600" entry:"1606082017" modified:"1606259713" project:"thesis" status:"pending" tags:"next" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1606213800" entry:"1606082052" modified:"1606082436" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1606818600" entry:"1606082052" modified:"1606259713" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1606213800" entry:"1606082077" modified:"1606082436" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1606818600" entry:"1606082077" modified:"1606259713" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1606213800" entry:"1606082156" modified:"1606082436" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1606818600" entry:"1606082156" modified:"1606259713" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1606259713
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1606213800" entry:"1606082172" modified:"1606082436" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1606818600" entry:"1606082172" modified:"1606259713" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1606259713
+old [description:"Let polymorphism" due:"1606213800" entry:"1606182543" modified:"1606182604" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1606818600" entry:"1606182543" modified:"1606259713" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1606259713
+old [description:"Introduce denotional semantics" due:"1606213800" end:"1606182222" entry:"1606081047" modified:"1606182222" project:"thesis" status:"completed" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+new [description:"Introduce denotional semantics" due:"1606818600" end:"1606182222" entry:"1606081047" modified:"1606259713" project:"thesis" status:"completed" uuid:"70b75f97-e3df-4b11-a0ee-c61258550020"]
+---
+time 1606259713
+old [description:"Parsing" due:"1607166000" end:"1606065315" entry:"1605926505" modified:"1606081679" project:"thesis" status:"deleted" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+new [description:"Parsing" due:"1606818600" end:"1606065315" entry:"1605926505" modified:"1606259713" project:"thesis" status:"deleted" uuid:"2167a00e-0a38-477c-9ba8-7019658eece2"]
+---
+time 1606259713
+old [description:"Algebraic data type" due:"1607166000" end:"1606057054" entry:"1605975588" modified:"1606081679" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+new [description:"Algebraic data type" due:"1606818600" end:"1606057054" entry:"1605975588" modified:"1606259713" project:"thesis" status:"completed" tags:"next" uuid:"5fa270f1-5d87-4c1e-9380-01793cdbcea5"]
+---
+time 1606259713
+old [description:"Algebraic data type" due:"1607166000" end:"1605974361" entry:"1605920770" modified:"1606081679" project:"thesis" status:"deleted" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+new [description:"Algebraic data type" due:"1606818600" end:"1605974361" entry:"1605920770" modified:"1606259713" project:"thesis" status:"deleted" tags:"next" uuid:"8472b1a5-ff87-4c1c-89ee-60c5458c62c1"]
+---
+time 1606259730
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606818600" entry:"1606082017" modified:"1606259713" project:"thesis" status:"pending" tags:"next" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606818600" entry:"1606082017" modified:"1606259730" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606259810
+new [description:"Fix tests" entry:"1606259810" modified:"1606259810" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606259818
+old [description:"Fix tests" entry:"1606259810" modified:"1606259810" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606259818" project:"tray" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606261075
+old [description:"Fix tests" entry:"1606259810" modified:"1606259818" project:"tray" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606261075" project:"tray" start:"1606261075" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606315514
+new [description:"Split tree in 2" entry:"1606315514" modified:"1606315514" project:"conc" status:"pending" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+---
+time 1606315526
+new [description:"Do 4,5 and maybe 6" entry:"1606315526" modified:"1606315526" project:"conc" status:"pending" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+---
+time 1606315553
+old [description:"Split tree in 2" entry:"1606315514" modified:"1606315514" project:"conc" status:"pending" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+new [description:"Split tree in 2" due:"1606345200" entry:"1606315514" modified:"1606315553" project:"conc" status:"pending" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+---
+time 1606315568
+old [description:"Do 4,5 and maybe 6" entry:"1606315526" modified:"1606315526" project:"conc" status:"pending" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+new [description:"Do 4,5 and maybe 6" due:"1606345200" entry:"1606315526" modified:"1606315568" project:"conc" status:"pending" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+---
+time 1606325974
+old [description:"Fix tests" entry:"1606259810" modified:"1606261075" project:"tray" start:"1606261075" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606325974" project:"tray" start:"1606261075" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606326004
+old [description:"Split tree in 2" due:"1606345200" entry:"1606315514" modified:"1606315553" project:"conc" status:"pending" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+new [description:"Split tree in 2" due:"1606345200" entry:"1606315514" modified:"1606326004" project:"conc" status:"pending" tags:"next" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+---
+time 1606328012
+old [description:"Split tree in 2" due:"1606345200" entry:"1606315514" modified:"1606326004" project:"conc" status:"pending" tags:"next" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+new [description:"Split tree in 2" due:"1606345200" end:"1606328012" entry:"1606315514" modified:"1606328012" project:"conc" status:"completed" tags:"next" uuid:"9554a467-4849-4c1f-a383-b48d803b3297"]
+---
+time 1606328026
+old [description:"Do 4,5 and maybe 6" due:"1606345200" entry:"1606315526" modified:"1606315568" project:"conc" status:"pending" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+new [description:"Do 4,5 and maybe 6" due:"1606345200" entry:"1606315526" modified:"1606328026" project:"conc" status:"pending" tags:"next" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+---
+time 1606335620
+old [description:"Do 4,5 and maybe 6" due:"1606345200" entry:"1606315526" modified:"1606328026" project:"conc" status:"pending" tags:"next" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+new [description:"Do 26" due:"1606345200" entry:"1606315526" modified:"1606335620" project:"conc" status:"pending" tags:"next" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+---
+time 1606335630
+old [description:"Do 26" due:"1606345200" entry:"1606315526" modified:"1606335620" project:"conc" status:"pending" tags:"next" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+new [description:"Do 26" due:"1606345200" end:"1606335630" entry:"1606315526" modified:"1606335630" project:"conc" status:"completed" tags:"next" uuid:"92f31a4a-382b-4887-94d8-54fe36f41f7e"]
+---
+time 1606335704
+old [description:"Fix tests" entry:"1606259810" modified:"1606325974" project:"tray" start:"1606261075" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606335704" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606335724
+old [description:"Fix tests" entry:"1606259810" modified:"1606335704" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606335724" project:"tray" start:"1606335724" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606335731
+old [description:"Fix tests" entry:"1606259810" modified:"1606335724" project:"tray" start:"1606335724" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606335731" project:"tray" start:"1606335724" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606748506
+new [description:"Compile and run file" entry:"1606748506" modified:"1606748506" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---
+time 1606748521
+old [description:"Fix tests" entry:"1606259810" modified:"1606335731" project:"tray" start:"1606335724" status:"pending" tags:"next" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1606748521" project:"tray" start:"1606335724" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1606748548
+old [description:"Compile and run file" entry:"1606748506" modified:"1606748506" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+new [description:"Compile and run file" due:"1606818600" entry:"1606748506" modified:"1606748548" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---
+time 1606756313
+old [description:"Compile and run file" due:"1606818600" entry:"1606748506" modified:"1606748548" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+new [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606756313" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---

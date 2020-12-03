@@ -438,3 +438,92 @@ time 1606781435
 old [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606756313" project:"thesis" status:"pending" tags:"next" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
 new [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606781435" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
 ---
+time 1606996194
+old [description:"Call by need, value and name" due:"1606818600" entry:"1605926450" modified:"1606259713" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1607423400" entry:"1605926450" modified:"1606996194" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1606818600" entry:"1605926512" modified:"1606259713" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1607423400" entry:"1605926512" modified:"1606996194" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1606818600" entry:"1606082017" modified:"1606259730" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1607423400" entry:"1606082017" modified:"1606996194" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1606818600" entry:"1606082052" modified:"1606259713" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1607423400" entry:"1606082052" modified:"1606996194" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1606818600" entry:"1606082077" modified:"1606259713" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1607423400" entry:"1606082077" modified:"1606996194" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1606818600" entry:"1606082156" modified:"1606259713" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1607423400" entry:"1606082156" modified:"1606996194" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1606996194
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1606818600" entry:"1606082172" modified:"1606259713" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1607423400" entry:"1606082172" modified:"1606996194" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1606996194
+old [description:"Let polymorphism" due:"1606818600" entry:"1606182543" modified:"1606259713" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1607423400" entry:"1606182543" modified:"1606996194" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1606996194
+old [description:"Graph reducer" due:"1606818600" entry:"1606748506" modified:"1606781435" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+new [description:"Graph reducer" due:"1607423400" entry:"1606748506" modified:"1606996194" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---
+time 1607002026
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" entry:"1607002026" modified:"1607002026" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607002079
+new [description:"Currently editing spec" entry:"1607002079" modified:"1607002079" project:"casehub" status:"pending" uuid:"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"]
+---
+time 1607002100
+new [description:"Routing spec" entry:"1607002100" modified:"1607002100" project:"casehub" status:"pending" uuid:"04f25a3b-1cd6-41fe-94cd-95b117438bac"]
+---
+time 1607002127
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" entry:"1607002026" modified:"1607002026" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607002127" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607002127
+old [description:"Currently editing spec" entry:"1607002079" modified:"1607002079" project:"casehub" status:"pending" uuid:"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"]
+new [description:"Currently editing spec" due:"1607029200" entry:"1607002079" modified:"1607002127" project:"casehub" status:"pending" uuid:"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"]
+---
+time 1607002127
+old [description:"Routing spec" entry:"1607002100" modified:"1607002100" project:"casehub" status:"pending" uuid:"04f25a3b-1cd6-41fe-94cd-95b117438bac"]
+new [description:"Routing spec" due:"1607029200" entry:"1607002100" modified:"1607002127" project:"casehub" status:"pending" uuid:"04f25a3b-1cd6-41fe-94cd-95b117438bac"]
+---
+time 1607002141
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607002127" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607002141" project:"casehub" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607010298
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607002141" project:"casehub" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607010298" project:"casehub" start:"1607010298" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607010301
+old [description:"Fix tests" entry:"1606259810" modified:"1606748521" project:"tray" start:"1606335724" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+new [description:"Fix tests" entry:"1606259810" modified:"1607010301" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
+---
+time 1607014432
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607010298" project:"casehub" start:"1607010298" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607014432" project:"casehub" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607014444
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607014432" project:"casehub" status:"pending" tags:"next" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607014444" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607014446
+old [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" entry:"1607002026" modified:"1607014444" project:"casehub" status:"pending" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+new [description:"Timeout spec for curretly active and event filtering users who should receive event" due:"1607029200" end:"1607014446" entry:"1607002026" modified:"1607014446" project:"casehub" status:"completed" uuid:"401cec53-7ec7-4950-8a66-73ed6fe52763"]
+---
+time 1607014476
+old [description:"Currently editing spec" due:"1607029200" entry:"1607002079" modified:"1607002127" project:"casehub" status:"pending" uuid:"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"]
+new [description:"Currently editing spec" due:"1607029200" end:"1607014476" entry:"1607002079" modified:"1607014476" project:"casehub" status:"completed" uuid:"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"]
+---
+time 1607014481
+old [description:"Routing spec" due:"1607029200" entry:"1607002100" modified:"1607002127" project:"casehub" status:"pending" uuid:"04f25a3b-1cd6-41fe-94cd-95b117438bac"]
+new [description:"Routing spec" due:"1607029200" end:"1607014481" entry:"1607002100" modified:"1607014481" project:"casehub" status:"completed" uuid:"04f25a3b-1cd6-41fe-94cd-95b117438bac"]
+---

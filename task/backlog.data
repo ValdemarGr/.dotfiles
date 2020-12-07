@@ -144,3 +144,4 @@
 {"description":"Currently editing spec","due":"20201203T210000Z","end":"20201203T165436Z","entry":"20201203T132759Z","modified":"20201203T165436Z","project":"casehub","status":"completed","uuid":"9de2a35d-9ccf-485a-ad40-3f22a22bdf0e"}
 {"description":"Routing spec","due":"20201203T210000Z","end":"20201203T165441Z","entry":"20201203T132820Z","modified":"20201203T165441Z","project":"casehub","status":"completed","uuid":"04f25a3b-1cd6-41fe-94cd-95b117438bac"}
 {"depends":"70b75f97-e3df-4b11-a0ee-c61258550020","description":"HM Rules, sets, maps and term","due":"20201208T103000Z","end":"20201205T183901Z","entry":"20201122T215337Z","modified":"20201205T183901Z","project":"thesis","status":"completed","uuid":"129beadd-da80-471e-aa79-17804a63b4f9"}
+{"description":"De Bruijn indicies","entry":"20201207T163137Z","modified":"20201207T163137Z","project":"thesis","status":"pending","uuid":"47c74bdb-88c9-4a10-9093-85970b3df7cb"}

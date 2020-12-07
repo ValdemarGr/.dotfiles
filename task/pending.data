@@ -7,3 +7,4 @@
 [description:"Let polymorphism" due:"1607423400" entry:"1606182543" modified:"1606996194" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
 [description:"Fix tests" entry:"1606259810" modified:"1607010301" project:"tray" status:"pending" uuid:"b2a09624-221d-43b6-852d-b7521577b3d6"]
 [description:"Graph reducer" due:"1607423400" entry:"1606748506" modified:"1606996194" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+[description:"De Bruijn indicies" entry:"1607358697" modified:"1607358697" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]

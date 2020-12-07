@@ -531,3 +531,6 @@ time 1607193541
 old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1607423400" entry:"1606082017" modified:"1606996194" project:"thesis" status:"pending" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
 new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1607423400" end:"1607193541" entry:"1606082017" modified:"1607193541" project:"thesis" status:"completed" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]
 ---
+time 1607358697
+new [description:"De Bruijn indicies" entry:"1607358697" modified:"1607358697" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
+---

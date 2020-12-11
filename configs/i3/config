@@ -16,8 +16,8 @@ set $windowserverscript ~/Git/.dotfiles/scripts/windowserver.sh
 set $windowclient ~/Git/.dotfiles/scripts/windowclient.sh
 set $windowserverport 6969
 
-gaps inner 12
-gaps outer 12
+#gaps inner 12
+#gaps outer 12
 
 set $FOCUS #B1B541
 set $UNFOCUS #3c3b37

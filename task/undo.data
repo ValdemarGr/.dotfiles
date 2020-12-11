@@ -534,3 +534,47 @@ new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets,
 time 1607358697
 new [description:"De Bruijn indicies" entry:"1607358697" modified:"1607358697" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
 ---
+time 1607707141
+old [description:"Call by need, value and name" due:"1607423400" entry:"1605926450" modified:"1606996194" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+new [description:"Call by need, value and name" due:"1608030000" entry:"1605926450" modified:"1607707141" project:"thesis" status:"pending" uuid:"1e50e153-ac1f-44fe-ba5e-6318c40cdcb8"]
+---
+time 1607707143
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1607423400" entry:"1605926512" modified:"1606996194" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020,129beadd-da80-471e-aa79-17804a63b4f9,eef02103-3a66-4c90-bc44-057448022ec2,fb379cfe-6616-4258-8731-706ac3b9d75c,1c649344-3e5f-475d-bb9a-1b425726ded3,f602b5b4-c4b6-44a3-a020-ceae089bbaf3,88db5cf4-edab-4d14-88e6-5d633dbdd16b" description:"Typing" due:"1608030000" entry:"1605926512" modified:"1607707143" project:"thesis" status:"pending" uuid:"50d1eefc-f4bd-4d4f-849c-a2a31598c944"]
+---
+time 1607707143
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1607423400" entry:"1606082052" modified:"1606996194" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1608030000" entry:"1606082052" modified:"1607707143" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1607707143
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1607423400" entry:"1606082077" modified:"1606996194" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1608030000" entry:"1606082077" modified:"1607707143" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---
+time 1607707143
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1607423400" entry:"1606082156" modified:"1606996194" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1608030000" entry:"1606082156" modified:"1607707143" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1607707143
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1607423400" entry:"1606082172" modified:"1606996194" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM space and time complexity" due:"1608030000" entry:"1606082172" modified:"1607707143" project:"thesis" status:"pending" uuid:"f602b5b4-c4b6-44a3-a020-ceae089bbaf3"]
+---
+time 1607707143
+old [description:"Let polymorphism" due:"1607423400" entry:"1606182543" modified:"1606996194" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1608030000" entry:"1606182543" modified:"1607707143" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1607707143
+old [description:"Graph reducer" due:"1607423400" entry:"1606748506" modified:"1606996194" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+new [description:"Graph reducer" due:"1608030000" entry:"1606748506" modified:"1607707143" project:"thesis" status:"pending" uuid:"8ed00240-ee7a-4f96-a993-015727246202"]
+---
+time 1607707159
+old [description:"Let polymorphism" due:"1608030000" entry:"1606182543" modified:"1607707143" project:"thesis" status:"pending" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+new [description:"Let polymorphism" due:"1608030000" end:"1607707159" entry:"1606182543" modified:"1607707159" project:"thesis" status:"completed" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
+---
+time 1607707172
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1608030000" entry:"1606082156" modified:"1607707143" project:"thesis" status:"pending" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1608030000" end:"1607707172" entry:"1606082156" modified:"1607707172" project:"thesis" status:"completed" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
+---
+time 1607707188
+old [description:"De Bruijn indicies" entry:"1607358697" modified:"1607358697" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
+new [description:"De Bruijn indicies" due:"1608030000" entry:"1607358697" modified:"1607707188" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
+---

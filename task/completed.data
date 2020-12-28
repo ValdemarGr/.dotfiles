@@ -1,3 +1,5 @@
+[depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1608030000" end:"1609177821" entry:"1606082052" modified:"1609177821" project:"thesis" status:"completed" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+[depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1608030000" end:"1609177826" entry:"1606082077" modified:"1609177826" project:"thesis" status:"completed" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
 [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"High level encoding" due:"1608030000" end:"1607707172" entry:"1606082156" modified:"1607707172" project:"thesis" status:"completed" uuid:"1c649344-3e5f-475d-bb9a-1b425726ded3"]
 [description:"Let polymorphism" due:"1608030000" end:"1607707159" entry:"1606182543" modified:"1607707159" project:"thesis" status:"completed" uuid:"88db5cf4-edab-4d14-88e6-5d633dbdd16b"]
 [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Rules, sets, maps and term" due:"1607423400" end:"1607193541" entry:"1606082017" modified:"1607193541" project:"thesis" status:"completed" uuid:"129beadd-da80-471e-aa79-17804a63b4f9"]

@@ -578,3 +578,11 @@ time 1607707188
 old [description:"De Bruijn indicies" entry:"1607358697" modified:"1607358697" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
 new [description:"De Bruijn indicies" due:"1608030000" entry:"1607358697" modified:"1607707188" project:"thesis" status:"pending" uuid:"47c74bdb-88c9-4a10-9093-85970b3df7cb"]
 ---
+time 1609177821
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1608030000" entry:"1606082052" modified:"1607707143" project:"thesis" status:"pending" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"HM Algorithm W inference" due:"1608030000" end:"1609177821" entry:"1606082052" modified:"1609177821" project:"thesis" status:"completed" uuid:"eef02103-3a66-4c90-bc44-057448022ec2"]
+---
+time 1609177826
+old [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1608030000" entry:"1606082077" modified:"1607707143" project:"thesis" status:"pending" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+new [depends:"70b75f97-e3df-4b11-a0ee-c61258550020" description:"Algorith W errors and constraint solving" due:"1608030000" end:"1609177826" entry:"1606082077" modified:"1609177826" project:"thesis" status:"completed" uuid:"fb379cfe-6616-4258-8731-706ac3b9d75c"]
+---

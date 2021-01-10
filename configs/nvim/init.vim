@@ -15,6 +15,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set cursorcolumn
+set hidden
 
 set number relativenumber
 set nu rnu

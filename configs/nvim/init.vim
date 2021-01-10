@@ -16,6 +16,7 @@ set undofile
 set incsearch
 set cursorcolumn
 set hidden
+:set completeopt=longest,menuone
 
 set number relativenumber
 set nu rnu

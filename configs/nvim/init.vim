@@ -71,6 +71,7 @@ Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'petobens/poet-v'
 
 call plug#end()
 

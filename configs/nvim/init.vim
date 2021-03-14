@@ -73,9 +73,21 @@ Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
 Plug 'ryanoasis/vim-devicons'
-Plug 'petobens/poet-v'
+"Plug 'petobens/poet-v'
+
+Plug 'stsewd/fzf-checkout.vim'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'scalameta/nvim-metals'
 
 call plug#end()
+
+set shortmess-=F
 
 let g:sql_type_default = 'pgsql'
 let g:ftplugin_sql_omni_key = '<C-j>'
@@ -109,6 +121,8 @@ let g:vimwiki_list = [{'path': '~/Git/.dotfiles/wiki/', 'path_html':'~/Git/.dotf
 runtime metals.vim 
 runtime keys.vim
 runtime easymotion.vim
+
+lua require('telescope-config')
 
 "" dark red
 "hi tsxTagName guifg=#E06C75

@@ -10,8 +10,8 @@ map <leader>S <Plug>(easymotion-S)
 map <leader>s <Plug>(easymotion-s)
 map <leader>s2 <Plug>(easymotion-bd-s2)
 
-map <leader>w <Plug>(easymotion-w)
-map <leader>W <Plug>(easymotion-W)
+"map <leader>w <Plug>(easymotion-w)
+"map <leader>W <Plug>(easymotion-W)
 
-map <leader>b <Plug>(easymotion-b)
-map <leader>B <Plug>(easymotion-B)
+"map <leader>b <Plug>(easymotion-b)
+"map <leader>B <Plug>(easymotion-B)

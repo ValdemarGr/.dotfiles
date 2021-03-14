@@ -1,9 +1,12 @@
 map Q <Nop>
+command W w
 
 nnoremap <silent> <leader>p :<C-u>GFiles!<cr> 
 nnoremap <silent> <leader>o :<C-u>GFiles!?<cr> 
 nnoremap <silent> <leader>i :<C-u>Files!<cr> 
 nnoremap <silent> <leader>u :<C-u>Buffers!<cr> 
+nnoremap <silent> <leader>y :<C-u>AutoFZF!<cr> 
+nnoremap <silent> <leader>x :<C-u>AutoFZFCD!<cr> 
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
@@ -32,3 +35,5 @@ nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
 nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
 
 nnoremap <silent> <leader>db :DBUI<CR>
+
+nnoremap <silent> <leader>. :Files! $DOTFILES<cr>

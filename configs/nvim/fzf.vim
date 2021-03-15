@@ -75,3 +75,14 @@ command! -bang AutoAddDir
 
 "command! -bang WatchFiles
     "\ call s:FilesIn(<bang>0)
+
+
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+nnoremap <C-q> <Nop>
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list') }

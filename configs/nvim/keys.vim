@@ -37,3 +37,4 @@ nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
 nnoremap <silent> <leader>db :DBUI<CR>
 
 nnoremap <silent> <leader>. :Files! $DOTFILES<cr>
+nnoremap <silent> <leader>cd :CocFzfList diagnostics<cr>

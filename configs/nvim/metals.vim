@@ -60,5 +60,8 @@ nmap <leader>qf <Plug>(coc-fix-current)
 xmap <leader>a <Plug>(coc-codeaction-line)
 nmap <leader>a <Plug>(coc-codeaction-line)
 
+command! -nargs=0 Tsc
+  \ call CocAction('runCommand', 'tsserver.watchBuild')
+
 " coc listens for esc, not C-c
 inoremap <C-c> <Esc>

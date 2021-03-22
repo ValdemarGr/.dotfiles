@@ -57,5 +57,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'scalameta/nvim-metals'
 
 Plug 'joshdick/onedark.vim'
+Plug 'antoinemadec/coc-fzf'
 
 call plug#end()

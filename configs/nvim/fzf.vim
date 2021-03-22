@@ -1,8 +1,12 @@
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!\.git/*"'
-let $FZF_DEFAULT_OPTS="--ansi --layout reverse --preview 'bat --color always --style=header,grid --line-range :300 {}'"
+let $FZF_DEFAULT_OPTS="--ansi --layout reverse --preview 'bat --color always --style=header,grid --line-range :300 {}' --bind alt-a:select-all,alt-d:deselect-all"
 
 let g:fzf_preview_window = 'right:48%'
 let g:fzf_buffers_jump = 1
+let g:fzf_layout = { 'window': 'enew' }
+
+let g:coc_fzf_preview = 'right:0%'
+let g:coc_fzf_opts = []
 
 command! -bang -nargs=* RG
   \ call fzf#vim#grep(
@@ -77,7 +81,7 @@ command! -bang AutoAddDir
     "\ call s:FilesIn(<bang>0)
 
 
-function! s:build_quickfix_list(lines)
+function! s:BuildQuickfixList(lines)
   call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
   copen
   cc
@@ -85,4 +89,34 @@ endfunction
 
 nnoremap <C-q> <Nop>
 let g:fzf_action = {
-  \ 'ctrl-q': function('s:build_quickfix_list') }
+  \ 'ctrl-q': function('<SID>BuildQuickfixList') }
+
+
+
+" {
+"   'file': '/home/valde/Git/ui-sandbox/src/store/HistoryStore.ts', 'lnum': 6, 'col': 33, 
+"   'location': {'uri': 'file:///home/valde/Git/ui-sandbox/src/store/HistoryStore.ts', 
+"   'range': {'end': {'character': 48, 'line': 5}, 'start': {'character': 32, 'line': 5}}}, 'level': 1, 
+"   'message': '[tsserver 2307] Cannot find module ''./PendingState'' or its corresponding type declarations.', 'severity': 'Error'
+" }
+
+"function! s:format_diag (item) 
+  "if has_key(a:item, 'file')
+    "let file = substitute(a:item.file, getcwd() . "/" , "", "")
+    "let msg = substitute(a:item.message, "\n", " ", "g")
+    "let hl = get({'Error': 'cocerrorsign', 'Warning': 'cocwarningsign',
+          "\ 'Information': 'cocinfosign', 'Hint': 'cochintsign'}, a:item.severity, '')
+    
+  "endif
+"endfunction
+
+"function! s:get_diag (bang)
+  "let diags = CocAction('diagnosticList')
+  "call fzf#run(fzf#wrap({
+    "\  'source': l:diags,
+    "\ 'sink': 'e'
+  "\}), a:bang)
+"endfunction
+
+"command! -bang DiagFZF
+  "\ call s:get_diag(<bang>0)

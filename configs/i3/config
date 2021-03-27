@@ -23,9 +23,7 @@ set $FOCUS #B1B541
 set $UNFOCUS #3c3b37
 
 exec --no-startup-id $windowserverscript $windowserverport
-exec --no-startup-id $polylaunch
-exec --no-startup-id picom
-exec --no-startup-id bash ~/Git/.dotfiles/configs/i3/wp.sh
+exec --no-startup-id ~/Git/.dotfiles/configs/i3/screens.sh
 
 bindsym $mod+w gaps inner current set 0; gaps outer current set 0
 bindsym $mod+q gaps inner current set 12; gaps outer current set 12

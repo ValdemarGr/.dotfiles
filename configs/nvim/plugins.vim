@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+"Plug 'tpope/vim-commentary'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 

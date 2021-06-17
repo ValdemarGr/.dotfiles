@@ -42,12 +42,12 @@ autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
-runtime metals.vim 
+"runtime metals.vim 
 runtime keys.vim
 runtime easymotion.vim
 runtime fzf.vim
 
-lua require('telescope-config')
+"lua require('telescope-config')
 
 function s:AllocTerm ()
   if exists(g:term_swap_id)
@@ -93,4 +93,4 @@ endfunction
 command! AllocateTerm call s:AllocTerm()
 command! ToggleTerm call s:ToggleAlt()
 
-
+runtime lsp.vim

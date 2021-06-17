@@ -11,9 +11,9 @@
 
 set $mod Mod4
 set $term urxvt
-set $polylaunch ~/Git/.dotfiles/configs/polybar/launch.sh
-set $windowserverscript ~/Git/.dotfiles/scripts/windowserver.sh
-set $windowclient ~/Git/.dotfiles/scripts/windowclient.sh
+set $polylaunch ~/git/.dotfiles/configs/polybar/launch.sh
+set $windowserverscript ~/git/.dotfiles/scripts/windowserver.sh
+set $windowclient ~/git/.dotfiles/scripts/windowclient.sh
 set $windowserverport 6969
 
 #gaps inner 12
@@ -23,11 +23,13 @@ set $FOCUS #B1B541
 set $UNFOCUS #3c3b37
 
 exec --no-startup-id $windowserverscript $windowserverport
-exec --no-startup-id ~/Git/.dotfiles/configs/i3/screens.sh
+exec --no-startup-id ~/git/.dotfiles/configs/i3/screens.sh
 
 bindsym $mod+w gaps inner current set 0; gaps outer current set 0
 bindsym $mod+q gaps inner current set 12; gaps outer current set 12
 
+exec --no-startup-id bash ~/.screenlayout/default.sh
+exec --no-startup-id $polylaunch
 bindsym $mod+p exec --no-startup-id $polylaunch
 bindsym $mod+y exec --no-startup-id killall -9 polybar
 bindsym $mod+s exec --no-startup-id $windowserverscript $windowserverport

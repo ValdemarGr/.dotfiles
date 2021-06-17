@@ -12,7 +12,7 @@ Plug 'mbbill/undotree'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
+"Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
 
 "Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -51,7 +51,7 @@ Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -60,4 +60,8 @@ Plug 'scalameta/nvim-metals'
 Plug 'joshdick/onedark.vim'
 Plug 'antoinemadec/coc-fzf'
 
+Plug 'hrsh7th/nvim-compe'
+
 call plug#end()
+
+

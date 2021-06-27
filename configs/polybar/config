@@ -1,10 +1,32 @@
-[color]
+;                                                  
+; ██████  ██       ██████  ██████   █████  ██      
+;██       ██      ██    ██ ██   ██ ██   ██ ██      
+;██   ███ ██      ██    ██ ██████  ███████ ██      
+;██    ██ ██      ██    ██ ██   ██ ██   ██ ██      
+; ██████  ███████  ██████  ██████  ██   ██ ███████ 
+;                                                  
+[global]
+padding = 4
 
 bg = #242424
 fg = #D9DBDF
 fg-alt = #141C21
+lighter-bg = #3d3d3d
 
-alpha = #00000000
+white = #FFFFFF
+black = #000000
+teal = #106066
+yellow = #37381d
+red = #301313
+green = #09360e
+
+selected = #474747
+
+cpu-back = ${global.teal}
+mem-back = ${global.lighter-bg}
+swap-back = ${global.red}
+chrono-back = ${global.teal}
+spotify-back = ${global.green}
 
 shade1 = #AFB42B
 shade2 = #C0CA33
@@ -12,3 +34,236 @@ shade3 = #CDDC39
 shade4 = #D4E157
 shade5 = #DCE775
 shade6 = #E6EE9C
+
+;
+;██████   █████  ██████  ███████ 
+;██   ██ ██   ██ ██   ██ ██      
+;██████  ███████ ██████  ███████ 
+;██   ██ ██   ██ ██   ██      ██ 
+;██████  ██   ██ ██   ██ ███████ 
+;                                
+[bar/base]
+height = 30
+font-0 = fixed:pixelsize=14;2
+font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
+font-2 = 3270Medium Nerd Font Mono:style=Medium:pixelsize=24;5
+font-3 = FontAwesome:style=Regular:pixelsize=14;1
+font-4 = Font Awesome 5 Brands Regular:style=Regular:pixelsize=14;3
+font-5 = Font Awesome 5 Free Solid:style=Solid:pixelsize=14;1
+font-6 = Font Awesome 5 Free Regular:style=Regular:pixelsize=14;1
+font-7 = fixed:pixelsize=18;2
+font-8 = Roboto Mono:style=Regular:pixelsize=16;3
+
+[bar/main]
+background = ${global.bg}
+inherit = bar/base
+modules-right = ender spotifytail spotify spotifyhead chronotail chrono chronohead swaptail swap swaphead memtail mem memhead cputail cpu
+modules-left = i3
+tray-position = center
+tray-padding = 3
+;
+;███████ ███    ██ ██████  ███████ ██████  
+;██      ████   ██ ██   ██ ██      ██   ██ 
+;█████   ██ ██  ██ ██   ██ █████   ██████  
+;██      ██  ██ ██ ██   ██ ██      ██   ██ 
+;███████ ██   ████ ██████  ███████ ██   ██ 
+;                                          
+[module/ender]
+type = custom/text
+content-foreground = ${global.black}
+content-background = ${global.bg}
+content = ""
+;
+;███████ ██████   ██████  ████████ ██ ███████ ██    ██ 
+;██      ██   ██ ██    ██    ██    ██ ██       ██  ██  
+;███████ ██████  ██    ██    ██    ██ █████     ████   
+;     ██ ██      ██    ██    ██    ██ ██         ██    
+;███████ ██       ██████     ██    ██ ██         ██    
+;                                                      
+[module/spotify]
+type = custom/script
+interval = 3
+label-font = 9
+label = %output%
+label-minlen = 30
+label-maxlen = 30
+label-alignment = center
+format =  <label>
+exec = python3 ~/.config/polybar/spotify_status.py -f '{artist}: {song}'
+format-background = ${global.spotify-back}
+format-padding = ${global.padding}
+
+[module/spotifyhead]
+type = custom/text
+content-foreground = ${global.black}
+content-background = ${global.spotify-back}
+content = ""
+
+[module/spotifytail]
+type = custom/text
+content-foreground = ${global.spotify-back}
+content-background = ${global.black}
+content = ""
+;
+; ██████ ██   ██ ██████   ██████  ███    ██  ██████  
+;██      ██   ██ ██   ██ ██    ██ ████   ██ ██    ██ 
+;██      ███████ ██████  ██    ██ ██ ██  ██ ██    ██ 
+;██      ██   ██ ██   ██ ██    ██ ██  ██ ██ ██    ██ 
+; ██████ ██   ██ ██   ██  ██████  ██   ████  ██████  
+;                                                    
+[module/chrono]
+type = internal/date
+interval = 3
+label-font = 9
+format-background = ${global.chrono-back}
+format-padding = ${global.padding}
+
+date = %Y-%m-%d%
+time = %H:%M
+date-alt = %A, %d %B %Y
+time-alt = %H:%M:%S
+
+format =    <label>
+label = %date:10:10% - %time:5:5%
+
+[module/chronohead]
+type = custom/text
+content-foreground = ${global.black}
+content-background = ${global.chrono-back}
+content = ""
+
+[module/chronotail]
+type = custom/text
+content-foreground = ${global.chrono-back}
+content-background = ${global.black}
+content = ""
+;
+;███████ ██     ██  █████  ██████  
+;██      ██     ██ ██   ██ ██   ██ 
+;███████ ██  █  ██ ███████ ██████  
+;     ██ ██ ███ ██ ██   ██ ██      
+;███████  ███ ███  ██   ██ ██      
+;                                  
+[module/swap]
+type = internal/memory
+label =  %gb_swap_used:9:9% / %gb_swap_total:9:9%
+interval = 3
+label-font = 9
+format-background = ${global.swap-back}
+format-padding = ${global.padding}
+
+[module/swaphead]
+type = custom/text
+content-foreground = ${global.black}
+content-background = ${global.swap-back}
+content = ""
+
+[module/swaptail]
+type = custom/text
+content-foreground = ${global.swap-back}
+content-background = ${global.black}
+content = ""
+;
+;███    ███ ███████ ███    ███ 
+;████  ████ ██      ████  ████ 
+;██ ████ ██ █████   ██ ████ ██ 
+;██  ██  ██ ██      ██  ██  ██ 
+;██      ██ ███████ ██      ██ 
+;                              
+[module/mem]
+type = internal/memory
+label =  %gb_used:9:9% / %gb_total:9:9%
+interval = 3
+label-font = 9
+format-background = ${global.mem-back}
+format-padding = ${global.padding}
+
+[module/memhead]
+type = custom/text
+content-foreground = ${global.black}
+content-background = ${global.mem-back}
+content = ""
+
+[module/memtail]
+type = custom/text
+content-foreground = ${global.mem-back}
+content-background = ${global.black}
+content = ""
+;
+; ██████ ██████  ██    ██ 
+;██      ██   ██ ██    ██ 
+;██      ██████  ██    ██ 
+;██      ██      ██    ██ 
+; ██████ ██       ██████  
+;                         
+[module/cpu]
+type = internal/cpu
+interval = 2
+format = <label>
+label = ﬙ %percentage-sum:3:3%%
+label-font = 9
+format-background = ${global.cpu-back}
+format-padding = ${global.padding}
+
+ramp-load-spacing = 1
+ramp-load-0 = ▁
+ramp-load-1 = ▂
+ramp-load-2 = ▃
+ramp-load-3 = ▄
+ramp-load-4 = ▅
+ramp-load-5 = ▆
+ramp-load-6 = ▇
+ramp-load-7 = █
+
+[module/cputail]
+type = custom/text
+content-foreground = ${global.cpu-back}
+content-background = ${global.black}
+content = ""
+;
+;██ ██████  
+;██      ██ 
+;██  █████  
+;██      ██ 
+;██ ██████  
+;
+[module/i3]
+type = internal/i3
+
+;# Format
+format = %{F#ffffff}%{B#3d3d3d}        %{F-}%{B-}%{F-}%{B-}%{F#3d3d3d}%{B#000000}%{F-}%{B-}<label-state><label-mode>%{B#242424}%{F#000000}%{F-}%{B-}
+
+label-mode = %{B#3d3d3d}%{F#000000}%{F-}%{B-}%{F#ffffff}%{B#3d3d3d} %mode% %{F-}%{B-}%{F#3d3d3d}%{B#000000}%{F-}%{B-}
+label-mode-font = 9
+label-mode-padding = 0
+
+;# Selected
+label-focused = %{B#106066}%{F#000000}%{F-}%{B-}%{F#ffffff}%{B#106066} %name% %{B-}%{F-}%{F#106066}%{B#000000}%{B-}%{F-}
+label-focused-background = ${global.teal}
+label-focused-font = 9
+
+;# Always
+label-unfocused = %{B#3d3d3d}%{F#000000}%{F-}%{B-}%{F#ffffff}%{B#3d3d3d} %name% %{F-}%{B-}%{F#3d3d3d}%{B#000000}%{F-}%{B-}
+label-unfocused-background = ${global.lighter-bg}
+label-unfocused-font = 9
+
+;# Vis
+label-visible = %{B#3d3d3d}%{F#000000}%{F-}%{B-}%{F#ffffff}%{B#3d3d3d} %name% %{F-}%{B-}%{F#3d3d3d}%{B#000000}%{F-}%{B-}
+label-visible-background = ${global.lighter-bg}
+label-visible-font = 9
+
+;# Sep
+label-separator = ""
+;label-separator-font = 8
+;label-separator-foreground = ${global.black}
+;label-separator-background = #ffffff
+
+;# Config
+index-sort = true
+scroll-up = i3-msg workspace next_on_output
+scroll-down = i3-msg workspace prev_on_output
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = false
+fuzzy-match = true

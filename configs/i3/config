@@ -27,7 +27,7 @@ set $UNFOCUS #3c3b37
 exec --no-startup-id $windowserverscript $windowserverport
 #exec --no-startup-id ~/git/.dotfiles/configs/i3/screens.sh
 exec --no-startup-id $fehscript
-exec --no-startup-id $nvidia
+exec --no-startup-id $nvidiasetup
 
 bindsym $mod+w gaps inner current set 0; gaps outer current set 0
 bindsym $mod+q gaps inner current set 12; gaps outer current set 12

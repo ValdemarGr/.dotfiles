@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sleep 2
 nvidia-settings &
 sleep 2

@@ -12,19 +12,21 @@ then
         PRIMARY_MONITOR=eDP-1
     fi
 else
-    PRIMARY_MONITOR=DP-4
     echo "desktop";
 fi
 
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    if [ "$m" == "$PRIMARY_MONITOR" ]; then
-      MONITOR=$m polybar --reload main &
-    else
-      MONITOR=$m polybar --reload wms &
-    fi
+    MONITOR=$m polybar --reload center &
+    MONITOR=$m polybar --reload back &
   done
+  MONITOR=$PRIMARY_MONITOR polybar --reload left &
+  MONITOR=$PRIMARY_MONITOR polybar --reload tray &
+  MONITOR=$PRIMARY_MONITOR polybar --reload right &
 else
-  MONITOR=$PRIMARY_MONITOR polybar --reload main &
+    MONITOR=$m polybar --reload back &
+    MONITOR=$m polybar --reload left &
+    MONITOR=$m polybar --reload center &
+    MONITOR=$m polybar --reload right &
 fi
 

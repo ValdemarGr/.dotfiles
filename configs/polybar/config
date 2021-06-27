@@ -55,12 +55,19 @@ font-7 = fixed:pixelsize=18;2
 font-8 = Roboto Mono:style=Regular:pixelsize=16;3
 
 [bar/main]
+monitor = ${env:MONITOR:}
 background = ${global.bg}
 inherit = bar/base
 modules-right = ender spotifytail spotify spotifyhead chronotail chrono chronohead swaptail swap swaphead memtail mem memhead cputail cpu
 modules-left = i3
 tray-position = center
 tray-padding = 3
+
+[bar/wms]
+monitor = ${env:MONITOR:}
+background = ${global.bg}
+inherit = bar/base
+modules-left = i3
 ;
 ;███████ ███    ██ ██████  ███████ ██████  
 ;██      ████   ██ ██   ██ ██      ██   ██ 
@@ -88,7 +95,7 @@ label = %output%
 label-minlen = 30
 label-maxlen = 30
 label-alignment = center
-format =  <label>
+format =    <label>
 exec = python3 ~/.config/polybar/spotify_status.py -f '{artist}: {song}'
 format-background = ${global.spotify-back}
 format-padding = ${global.padding}

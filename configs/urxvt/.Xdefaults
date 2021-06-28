@@ -27,7 +27,7 @@ URxvt.perl-ext-common: font-size,selection-to-clipboard
 
 URxvt*geometry:            112x22
 URxvt*font:                xft:FiraCode Nerd Font Mono:size=12:style=Regular
-URxvt*urlLauncher:         google-chrome
+URxvt*urlLauncher:         firefox
 URxvt*scrollBar:           false
 URxvt*scrollBar_right:     true
 URxvt*scrollColor:         #000000

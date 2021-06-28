@@ -47,7 +47,7 @@ runtime keys.vim
 runtime easymotion.vim
 runtime fzf.vim
 
-"lua require('telescope-config')
+lua require('telescope-config')
 
 function s:AllocTerm ()
   if exists(g:term_swap_id)
@@ -94,3 +94,5 @@ command! AllocateTerm call s:AllocTerm()
 command! ToggleTerm call s:ToggleAlt()
 
 runtime lsp.vim
+
+let g:airline_powerline_fonts = 1

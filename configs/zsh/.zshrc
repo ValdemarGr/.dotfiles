@@ -8,7 +8,7 @@ export ZSH="/home/valde/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="afowler"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,3 +102,6 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+export DOTFILES=~/git/.dotfiles
+[[ -r /usr/share/z/z.sh ]] && source /usr/share/z/z.sh

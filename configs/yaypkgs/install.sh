@@ -1,2 +1,2 @@
 #!/bin/bash
-yay -S firefox i3 lightdm lightdm-gtk-greeter pulseaudio rofi rofimoji neovim-nightly-bin fzf zsh rxvt-unicode polybar tmux feh python-pip curl netcat xorg-xrandr xorg-server bat fd ripgrep z pavucontrol coursier
+yay -S firefox i3 lightdm lightdm-gtk-greeter pulseaudio rofi rofimoji neovim-nightly-bin fzf zsh rxvt-unicode polybar tmux feh python-pip curl netcat xorg-xrandr xorg-server bat fd ripgrep zoxide pavucontrol coursier github-cli

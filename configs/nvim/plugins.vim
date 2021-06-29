@@ -6,15 +6,9 @@ Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-"Plug 'tpope/vim-commentary'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-"Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
-
-"Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'peitalin/vim-jsx-typescript'
@@ -45,20 +39,24 @@ Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
 Plug 'ryanoasis/vim-devicons'
-"Plug 'petobens/poet-v'
-
-Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'nvim-telescope/telescope-github.nvim'
+Plug 'nvim-telescope/telescope-frecency.nvim'
+Plug 'jvgrootveld/telescope-zoxide'
+Plug 'tami5/sql.nvim'
+
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'scalameta/nvim-metals'
 
 Plug 'joshdick/onedark.vim'
-Plug 'antoinemadec/coc-fzf'
+Plug 'phaazon/hop.nvim'
 
 Plug 'hrsh7th/nvim-compe'
 

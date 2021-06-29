@@ -1,5 +1,10 @@
 local actions = require('telescope.actions')
 
+require('telescope').load_extension('gh')
+require('telescope').load_extension('frecency')
+require('telescope').load_extension('zoxide')
+require('telescope').load_extension('fzf')
+
 require('telescope').setup{
   defaults = {
       mappings = {
@@ -29,27 +34,26 @@ require('telescope').setup{
     layout_strategy = "horizontal",
     layout_defaults = {
       horizontal = {
-        width_padding = 2,
+        width_padding = 4,
         height_padding = 2,
-        preview_width=70,
+        --preview_width=70,
         mirror = false,
       },
       vertical = {
         mirror = false,
       },
     },
-    file_sorter =  require'telescope.sorters'.get_fuzzy_file,
+    file_sorter = require('telescope').extensions.fzf.native_fsf_sorter,
     file_ignore_patterns = {},
-    generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
+    generic_sorter =  require('telescope').extensions.fzf.native_fsf_sorter,
     shorten_path = true,
     winblend = 0,
-    width = 0.75,
-    preview_cutoff = 0,
-    results_height = 1,
-    results_width = 0.1,
+    --width = 0.75,
+    --preview_cutoff = 0,
+    --results_height = 1,
+    --results_width = 0.1,
     border = {},
-    --borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
-    borderchars = { '', '', '', '', '', '', '', '' },
+    borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
     color_devicons = true,
     use_less = true,
     set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
@@ -61,3 +65,13 @@ require('telescope').setup{
     buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
   }
 }
+
+local M = {}
+M.search_dotfiles = function()
+  require("telescope.builtin").git_files({
+    prompt_title = "dotfiles >",
+    cwd = "$DOTFILES"
+  })
+end
+
+return M

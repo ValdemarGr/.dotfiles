@@ -1,40 +1,44 @@
+"native
 map Q <Nop>
 command W w
-
-nnoremap <silent> <leader>p :<C-u>GFiles!<cr> 
-nnoremap <silent> <leader>o :<C-u>GFiles!?<cr> 
-nnoremap <silent> <leader>i :<C-u>Files!<cr> 
-nnoremap <silent> <leader>u :<C-u>Buffers!<cr> 
-nnoremap <silent> <leader>y :<C-u>AutoFZF!<cr> 
-nnoremap <silent> <leader>x :<C-u>AutoFZFCD!<cr> 
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
-nnoremap <silent> <leader>// :<C-u>BLines!<cr>
-nnoremap <silent> <leader>sg :<C-u>RG!<cr>
-nnoremap <leader>so :CocSearch 
-
-nnoremap <leader>cg :RG! <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>co :CocSearch <C-R>=expand("<cword>")<CR><CR>
-
-command! -nargs=0 RCfg :source ~/.config/nvim/init.vim
-
+"NT
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 
+"Fug
 nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>gp :G push<CR>
-
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 
-nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
-nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
-
+"dadbod
 nnoremap <silent> <leader>db :DBUI<CR>
 
-nnoremap <silent> <leader>. :Files! $DOTFILES<cr>
-nnoremap <silent> <leader>cd :CocFzfList diagnostics<cr>
+"lsp
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
+inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
+nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent><leader>a       <cmd>lua vim.lsp.buf.code_action()<CR>
+"nnoremap <silent>gd              <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent><leader>fo      <cmd>lua vim.lsp.buf.formatting_sync()<CR>
+
+inoremap <C-c> <Esc>
+
+"telescope
+nnoremap <silent><leader>. <cmd>lua require('valde').telescope.search_dotfiles()<CR>
+nnoremap <silent><leader>i <cmd>lua require('telescope.builtin').find_files()<CR>
+nnoremap <silent><leader>p <cmd>lua require('telescope.builtin').git_files()<CR>
+nnoremap <silent><leader>// <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
+nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
+nnoremap <silent><leader>x <cmd>lua require('telescope').extensions.zoxide.list()<CR>
+nnoremap <silent><leader>gd              <cmd>lua require('telescope.builtin').lsp_references()<CR>
+nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>

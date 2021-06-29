@@ -29,7 +29,7 @@ URxvt*geometry:            112x22
 URxvt*font:                xft:FiraCode Nerd Font Mono:size=12:style=Regular
 URxvt*urlLauncher:         firefox
 URxvt*scrollBar:           false
-URxvt*scrollBar_right:     true
+URxvt*scrollBar_right:     false
 URxvt*scrollColor:         #000000
 URxvt.internalBorder:      1
 URxvt.letterSpace: -1

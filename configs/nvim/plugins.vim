@@ -54,6 +54,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'scalameta/nvim-metals'
+Plug 'neovim/nvim-lspconfig'
 
 Plug 'joshdick/onedark.vim'
 Plug 'phaazon/hop.nvim'

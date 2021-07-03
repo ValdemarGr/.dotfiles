@@ -58,7 +58,8 @@ font-8 = Roboto Mono:style=Regular:pixelsize=16;3
 monitor = ${env:MONITOR:}
 background = ${global.bg}
 inherit = bar/base
-modules-right = ender spotifytail spotify spotifyhead chronotail chrono chronohead swaptail swap swaphead memtail mem memhead cputail cpu
+;modules-right = ender spotifytail spotify spotifyhead chronotail chrono chronohead swaptail swap swaphead memtail mem memhead cputail cpu
+modules-right = ender chronotail chrono chronohead swaptail swap swaphead memtail mem memhead cputail cpu
 modules-left = i3
 tray-position = center
 tray-padding = 3

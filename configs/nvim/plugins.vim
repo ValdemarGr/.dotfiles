@@ -17,7 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 Plug 'hashivim/vim-terraform'
 Plug 'preservim/nerdtree'
 

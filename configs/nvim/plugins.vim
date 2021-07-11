@@ -22,6 +22,7 @@ Plug 'lifepillar/pgsql.vim'
 "Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
 "Plug 'guns/vim-sexp'
 "Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'hashivim/vim-terraform'
 
 Plug 'farmergreg/vim-lastplace'
 "Plug 'vimwiki/vimwiki'

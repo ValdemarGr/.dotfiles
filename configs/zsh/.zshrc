@@ -108,3 +108,4 @@ source /usr/share/fzf/completion.zsh
 
 export DOTFILES=~/git/.dotfiles
 [[ -r /usr/share/z/z.sh ]] && source /usr/share/z/z.sh
+source /usr/share/nvm/init-nvm.sh

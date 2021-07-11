@@ -58,6 +58,8 @@ Plug 'hoob3rt/lualine.nvim'
 
 Plug 'pwntester/octo.nvim'
 
+Plug 'rescript-lang/vim-rescript', { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
+
 call plug#end()
 
 

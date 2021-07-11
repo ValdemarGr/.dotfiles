@@ -1,6 +1,6 @@
 local actions = require('telescope.actions')
 
-require('telescope').load_extension('gh')
+-- require('telescope').load_extension('gh')
 require('telescope').load_extension('frecency')
 require('telescope').load_extension('zoxide')
 require('telescope').load_extension('fzf')
@@ -24,7 +24,7 @@ require('telescope').setup{
       '--column',
       '--smart-case'
     },
-    prompt_position = "bottom",
+    -- prompt_position = "bottom",
     prompt_prefix = "> ",
     selection_caret = "> ",
     entry_prefix = "  ",
@@ -32,10 +32,12 @@ require('telescope').setup{
     selection_strategy = "reset",
     sorting_strategy = "descending",
     layout_strategy = "horizontal",
-    layout_defaults = {
+    layout_config = {
       horizontal = {
-        width_padding = 4,
-        height_padding = 2,
+        width = 0.95,
+        height = 0.95,
+        -- width_padding = 100,
+        -- height_padding = 2,
         --preview_width=70,
         mirror = false,
       },

@@ -54,9 +54,9 @@ Plug 'phaazon/hop.nvim'
 
 Plug 'hrsh7th/nvim-compe'
 
-Plug 'hoob3rt/lualine.nvim'
+" Plug 'hoob3rt/lualine.nvim'
 
-Plug 'pwntester/octo.nvim'
+" Plug 'pwntester/octo.nvim'
 
 call plug#end()
 

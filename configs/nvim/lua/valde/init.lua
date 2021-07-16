@@ -3,6 +3,7 @@ require('valde.hop')
 require('valde.terraform')
 require('valde.compe')
 require('valde.saga')
+-- require('valde.treesitter')
 -- require('valde.lualine')
 -- require('valde.octo')
 

@@ -58,6 +58,9 @@ Plug 'hrsh7th/nvim-compe'
 
 " Plug 'pwntester/octo.nvim'
 
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/playground'
+
 call plug#end()
 
 

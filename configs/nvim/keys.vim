@@ -50,12 +50,12 @@ nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
 nnoremap <silent><leader>x <cmd>lua require('telescope').extensions.zoxide.list()<CR>
 nnoremap <silent><leader>s <cmd>lua require('telescope.builtin').live_grep()<CR>
 nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR>
+nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
 " nnoremap <silent><leader>gd              <cmd>lua require('telescope.builtin').lsp_references()<CR>
-" nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
 
 "saga
-nnoremap <silent>gd <cmd>lua require('lspsaga.provider').lsp_finder()<CR>
-nnoremap <silent><leader>gd <cmd>lua require('lspsaga.provider').preview_definition()<CR>
+" nnoremap <silent>gd <cmd>lua require('lspsaga.provider').lsp_finder()<CR>
+" nnoremap <silent><leader>gd <cmd>lua require('lspsaga.provider').preview_definition()<CR>
 nnoremap <silent><leader>e       <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
 nnoremap <silent><leader>q       <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>
 nnoremap <silent><leader>a       <cmd>lua require('lspsaga.codeaction').code_action()<CR>

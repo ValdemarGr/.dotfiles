@@ -48,7 +48,6 @@ require('telescope').setup{
     file_sorter = require('telescope').extensions.fzf.native_fsf_sorter,
     file_ignore_patterns = {},
     generic_sorter =  require('telescope').extensions.fzf.native_fsf_sorter,
-    -- shorten_path = true,
     winblend = 0,
     --width = 0.75,
     --preview_cutoff = 0,

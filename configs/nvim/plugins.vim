@@ -54,9 +54,12 @@ Plug 'phaazon/hop.nvim'
 
 Plug 'hrsh7th/nvim-compe'
 
-Plug 'hoob3rt/lualine.nvim'
+" Plug 'hoob3rt/lualine.nvim'
 
-Plug 'pwntester/octo.nvim'
+" Plug 'pwntester/octo.nvim'
+
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/playground'
 
 Plug 'rescript-lang/vim-rescript', { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
 

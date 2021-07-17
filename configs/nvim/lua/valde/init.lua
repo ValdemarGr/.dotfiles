@@ -5,6 +5,7 @@ require('valde.compe')
 require('valde.saga')
 require('valde.lualine')
 require('valde.octo')
+require('valde.rescript')
 
 local M = {}
 M.telescope = require('valde.telescope')

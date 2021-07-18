@@ -1,14 +1,17 @@
 require('valde.telescope')
 require('valde.hop')
-require('valde.terraform')
-require('valde.compe')
+telescope = require('valde.terraform')
+compe = require('valde.compe')
 require('valde.saga')
 require('valde.rescript')
+require('valde.luasnip')
 -- require('valde.treesitter')
 -- require('valde.lualine')
 -- require('valde.octo')
+require('valde.keys')
 
 local M = {}
-M.telescope = require('valde.telescope')
+M.telescope = telescope
+M.compe = compe
 
 return M

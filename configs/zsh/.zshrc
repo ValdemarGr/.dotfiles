@@ -109,3 +109,6 @@ source /usr/share/fzf/completion.zsh
 export DOTFILES=~/git/.dotfiles
 [[ -r /usr/share/z/z.sh ]] && source /usr/share/z/z.sh
 source /usr/share/nvm/init-nvm.sh
+
+source /opt/google-cloud-sdk/completion.zsh.inc
+source /opt/google-cloud-sdk/path.zsh.inc

@@ -8,8 +8,8 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
 "NT
-nnoremap <leader>nt :NvimTreeToggle<CR>
-nnoremap <leader>nf :NvimTreeFindFile<CR>
+nnoremap <leader>nt <cmd>lua require('valde').nvimtree.toggle()<CR>
+nnoremap <leader>nf <cmd>lua require('valde').nvimtree.find_file()<CR>
 
 "Fug
 nnoremap <silent> <leader>gs :G<CR>

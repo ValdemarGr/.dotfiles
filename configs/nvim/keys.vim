@@ -8,8 +8,8 @@ nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 
 "NT
-nnoremap <leader>nt :NvimTreeToggle<CR>
-nnoremap <leader>nf :NvimTreeFindFile<CR>
+nnoremap <leader>nt <cmd>lua require('valde').nvimtree.toggle()<CR>
+nnoremap <leader>nf <cmd>lua require('valde').nvimtree.find_file()<CR>
 
 "Fug
 nnoremap <silent> <leader>gs :G<CR>
@@ -27,8 +27,6 @@ nnoremap <silent><leader>mp <cmd>HopPattern<CR>
 nnoremap <silent><leader>mw <cmd>HopWord<CR>
 
 "lsp
-inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')

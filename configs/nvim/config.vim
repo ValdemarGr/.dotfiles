@@ -47,4 +47,4 @@ lua require('valde')
 runtime keys.vim
 runtime lsp.vim
 
-au BufWinEnter NvimTree setlocal rnu
+" au BufWinEnter NvimTree setlocal rnu

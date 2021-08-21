@@ -111,3 +111,5 @@ export DOTFILES=~/git/.dotfiles
 source /usr/share/nvm/init-nvm.sh
 
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
+source /opt/google-cloud-sdk/completion.zsh.inc
+source /opt/google-cloud-sdk/path.zsh.inc

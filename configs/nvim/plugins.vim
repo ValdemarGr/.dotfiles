@@ -61,6 +61,10 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'nvim-treesitter/playground'
 
+Plug 'rescript-lang/vim-rescript', { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
+
+Plug 'L3MON4D3/LuaSnip'
+
 call plug#end()
 
 

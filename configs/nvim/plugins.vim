@@ -37,7 +37,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Plug 'nvim-telescope/telescope-github.nvim'
-Plug 'nvim-telescope/telescope-frecency.nvim'
+" Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
 Plug 'tami5/sql.nvim'
 

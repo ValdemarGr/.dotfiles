@@ -10,6 +10,7 @@ require('valde.luasnip')
 -- require('valde.octo')
 require('valde.keys')
 nvimtree = require('valde.luatree')
+require('valde.metals')
 
 local M = {}
 

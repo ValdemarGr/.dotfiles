@@ -1,7 +1,7 @@
 local actions = require('telescope.actions')
 
 -- require('telescope').load_extension('gh')
-require('telescope').load_extension('frecency')
+-- require('telescope').load_extension('frecency')
 require('telescope').load_extension('zoxide')
 require('telescope').load_extension('fzf')
 

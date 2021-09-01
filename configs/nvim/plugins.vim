@@ -1,6 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
+" Plug 'rakr/vim-one'
+" Plug 'joshdick/onedark.vim'
+
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'mbbill/undotree'

@@ -2,6 +2,7 @@ syntax on
 
 runtime plugins.vim
 
+let g:gruvbox_termcolors = 16
 set background=dark
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox

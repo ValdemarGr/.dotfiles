@@ -37,7 +37,7 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'commit': '767e42f2e9595592ded51c69a0324a5dd811792d' }
 
 " Plug 'nvim-telescope/telescope-github.nvim'
 " Plug 'nvim-telescope/telescope-frecency.nvim'

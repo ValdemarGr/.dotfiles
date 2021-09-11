@@ -51,13 +51,24 @@ nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR
 nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
 " nnoremap <silent><leader>gd              <cmd>lua require('telescope.builtin').lsp_references()<CR>
 
-"saga
+"saga is no longer maintained??
 " nnoremap <silent>gd <cmd>lua require('lspsaga.provider').lsp_finder()<CR>
 " nnoremap <silent><leader>gd <cmd>lua require('lspsaga.provider').preview_definition()<CR>
-nnoremap <silent><leader>e       <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
-nnoremap <silent><leader>q       <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>
-nnoremap <silent><leader>a       <cmd>lua require('lspsaga.codeaction').code_action()<CR>
-nnoremap <silent><leader>dn       <cmd>lua require('lspsaga.diagnostic').lsp_jump_diagnostic_next()<CR>
-nnoremap <silent><leader>dp       <cmd>lua require('lspsaga.diagnostic').lsp_jump_diagnostic_prev()<CR>
-nnoremap <silent><leader>dc       <cmd>lua require('lspsaga.diagnostic').show_cursor_diagnostics()<CR>
-nnoremap <silent><leader>dl       <cmd>lua require('lspsaga.diagnostic').show_line_diagnostics()<CR>
+
+" binds before
+" nnoremap <silent><leader>e       <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
+" nnoremap <silent><leader>q       <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>
+" nnoremap <silent><leader>a       <cmd>lua require('lspsaga.codeaction').code_action()<CR>
+" nnoremap <silent><leader>dn       <cmd>lua require('lspsaga.diagnostic').lsp_jump_diagnostic_next()<CR>
+" nnoremap <silent><leader>dp       <cmd>lua require('lspsaga.diagnostic').lsp_jump_diagnostic_prev()<CR>
+" nnoremap <silent><leader>dc       <cmd>lua require('lspsaga.diagnostic').show_cursor_diagnostics()<CR>
+" nnoremap <silent><leader>dl       <cmd>lua require('lspsaga.diagnostic').show_line_diagnostics()<CR>
+
+" telescope equivalents
+nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent><leader>q       <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent><leader>a       <cmd>Telescope lsp_code_actions<CR>
+nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>
+nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>

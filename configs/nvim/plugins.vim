@@ -39,6 +39,8 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'commit': '767e42f2e9595592ded51c69a0324a5dd811792d' }
 
+" Plug 'ray-x/lsp_signature.nvim'
+
 " Plug 'nvim-telescope/telescope-github.nvim'
 " Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
@@ -50,7 +52,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'scalameta/nvim-metals'
 Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
+" Plug 'glepnir/lspsaga.nvim'
 
 "Plug 'joshdick/onedark.vim'
 Plug 'phaazon/hop.nvim'

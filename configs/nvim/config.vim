@@ -28,8 +28,6 @@ set diffopt+=vertical
 let mapleader = " "
 let g:vimwiki_list = [{'path': '~/Git/.dotfiles/wiki/', 'path_html':'~/Git/.dotfiles/html/'}]
 
-autocmd TermOpen,BufWinEnter,WinEnter term://* stopinsert
-autocmd BufLeave term://* stopinsert
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set shortmess-=F

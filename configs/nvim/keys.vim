@@ -45,7 +45,7 @@ nnoremap <silent><leader>i <cmd>lua require('telescope.builtin').find_files()<CR
 nnoremap <silent><leader>p <cmd>lua require('telescope.builtin').git_files()<CR>
 nnoremap <silent><leader>// <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
 nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
-nnoremap <silent><leader>x <cmd>lua require('telescope').extensions.zoxide.list()<CR>
+" nnoremap <silent><leader>x <cmd>lua require('telescope').extensions.zoxide.list()<CR>
 nnoremap <silent><leader>s <cmd>lua require('telescope.builtin').live_grep()<CR>
 nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR>
 nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
@@ -72,3 +72,16 @@ nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>
 nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+
+nnoremap <silent><leader>x <cmd>buffer term://*<CR>
+
+" buildsystem
+let g:bazel_make_command = "Make!"
+nnoremap <silent><leader>bb    <cmd>Bazel build //...<CR>
+nnoremap <silent><leader>bt    <cmd>Bazel test --test_output=errors //...<CR>
+nnoremap <silent><leader>br    <cmd>Dispatch! REPIN=1 bazel run @unpinned_maven//:pin<CR>
+nnoremap <silent><leader>bf    <cmd>e %:h/BUILD.bazel<CR>
+
+nnoremap <silent><leader>qn    <cmd>cnext<CR>
+nnoremap <silent><leader>qp    <cmd>cprev<CR>
+nnoremap <silent><leader>qo    <cmd>Copen<CR>

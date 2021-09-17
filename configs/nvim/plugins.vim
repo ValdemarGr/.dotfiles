@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-dispatch'
 Plug 'mbbill/undotree'
 
 "Plug 'HerringtonDarkholme/yats.vim'
@@ -69,7 +70,11 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'rescript-lang/vim-rescript', { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
 
 Plug 'L3MON4D3/LuaSnip'
+" Plug 'justinmk/vim-sneak'
 
+" Plug 'google/vim-maktaba'
+" Plug 'bazelbuild/vim-bazel'
+Plug 'lakshayg/vim-bazel'
 call plug#end()
 
 

@@ -17,6 +17,11 @@ end
 
 ls.snippets = {
   all = {
+    s({trig = "forc", name = "farc", dscr = "For comprehension"}, {
+      t({"for {", "\t_ <- "}),
+      i(1, "IO.unit"),
+      t({"", "} yield ()"})
+    }),
     s({trig = "funk", name = "funk", dscr = "Kleisli arrow in IO"}, {
       t("def "),
       i(1, "name"),

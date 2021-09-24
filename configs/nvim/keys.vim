@@ -1,6 +1,8 @@
 "native
 map Q <Nop>
 command W w
+command Wq wq
+command WQ wq
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>

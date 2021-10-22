@@ -75,7 +75,7 @@ nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>
 nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 
-nnoremap <silent><leader>x <cmd>buffer term://*<CR>
+nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
 
 " buildsystem
 let g:bazel_make_command = "Make!"

@@ -67,7 +67,8 @@ Plug 'hrsh7th/nvim-compe'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'nvim-treesitter/playground'
 
-Plug 'rescript-lang/vim-rescript', { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
+Plug 'rescript-lang/vim-rescript'
+", { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }
 
 Plug 'L3MON4D3/LuaSnip'
 " Plug 'justinmk/vim-sneak'
@@ -75,6 +76,8 @@ Plug 'L3MON4D3/LuaSnip'
 " Plug 'google/vim-maktaba'
 " Plug 'bazelbuild/vim-bazel'
 Plug 'lakshayg/vim-bazel'
+
+Plug 'cocopon/iceberg.vim'
 call plug#end()
 
 

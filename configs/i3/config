@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-set $term urxvt
+set $term alacritty
 set $polylaunch ~/git/.dotfiles/configs/polybar/launch.sh
 set $windowserverscript ~/git/.dotfiles/scripts/windowserver.sh
 set $windowclient ~/git/.dotfiles/scripts/windowclient.sh
@@ -87,7 +87,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term -b 0
+# bindsym $mod+Shift+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill

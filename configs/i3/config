@@ -49,7 +49,7 @@ bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xc
 bindsym $mod+Shift+Control+Right move workspace to output right
 bindsym $mod+Shift+Control+Left move workspace to output left
 
-exec $term -name zenpad
+exec $term --class zenpad --title zenpad --option window.padding.x=100 --option window.padding.y=100
 for_window [instance="zenpad"] move scratchpad;
 
 # Font for window titles. Will also be used by the bar unless a different font

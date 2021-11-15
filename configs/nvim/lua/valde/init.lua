@@ -1,3 +1,4 @@
+require("valde.harpoon")
 telescope = require('valde.telescope')
 compe = require('valde.compe')
 require('valde.hop')

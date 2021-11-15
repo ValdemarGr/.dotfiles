@@ -77,7 +77,15 @@ Plug 'L3MON4D3/LuaSnip'
 " Plug 'bazelbuild/vim-bazel'
 Plug 'lakshayg/vim-bazel'
 
+Plug 'BeneCollyridam/futhark-vim'
+
+Plug 'ThePrimeagen/harpoon'
+
 Plug 'cocopon/iceberg.vim'
+Plug 'vim-scripts/wombat256.vim'
+Plug 'jaredgorski/spacecamp'
+Plug 'sainnhe/sonokai'
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 

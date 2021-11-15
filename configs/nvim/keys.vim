@@ -70,12 +70,13 @@ nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_defin
 nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent><leader>q       <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent><leader>a       <cmd>Telescope lsp_code_actions<CR>
+nnoremap <silent><leader>dw       <cmd>Telescope lsp_workspace_diagnostics<CR>
 nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>
 nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 
-nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
+" nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
 
 " buildsystem
 let g:bazel_make_command = "Make!"
@@ -87,3 +88,5 @@ nnoremap <silent><leader>bf    <cmd>e %:h/BUILD.bazel<CR>
 nnoremap <silent><leader>qn    <cmd>cnext<CR>
 nnoremap <silent><leader>qp    <cmd>cprev<CR>
 nnoremap <silent><leader>qo    <cmd>Copen<CR>
+
+nnoremap <silent><leader>x <cmd>lua require("harpoon.term").gotoTerminal(1)<CR>

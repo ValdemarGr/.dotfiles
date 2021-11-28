@@ -6,6 +6,7 @@ let g:gruvbox_termcolors = 256
 set background=dark
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
+highlight Pmenu ctermbg=black guibg=#222222
 " colorscheme one
 " colorscheme onedark
 

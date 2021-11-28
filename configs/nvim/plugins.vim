@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+Plug 'ValdemarGr/gruvbox'
 " Plug 'rakr/vim-one'
 " Plug 'joshdick/onedark.vim'
 

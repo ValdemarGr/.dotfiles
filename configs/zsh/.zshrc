@@ -73,6 +73,7 @@ ZSH_THEME="agnoster"
 plugins=(
   vi-mode
   git
+  bazel
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -70,7 +70,7 @@ nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_defin
 nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent><leader>q       <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent><leader>a       <cmd>Telescope lsp_code_actions<CR>
-nnoremap <silent><leader>dw       <cmd>Telescope lsp_workspace_diagnostics<CR>
+nnoremap <silent><leader>dw       <cmd>Telescope diagnostics<CR>
 nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>

@@ -88,6 +88,8 @@ Plug 'jaredgorski/spacecamp'
 Plug 'sainnhe/sonokai'
 Plug 'nanotech/jellybeans.vim'
 
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 

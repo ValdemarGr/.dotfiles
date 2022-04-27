@@ -46,4 +46,8 @@ lua require('valde')
 runtime keys.vim
 runtime lsp.vim
 
+" autocmd BufEnter *.{scala} :TSEnable hightlight
+" TSEnable hightlight scala
+" autocmd BufEnter *.{scala} :TSBufEnable scala
+
 " au BufWinEnter NvimTree setlocal rnu

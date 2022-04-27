@@ -2,6 +2,11 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'morhetz/gruvbox'
 Plug 'ValdemarGr/gruvbox'
+Plug 'ValdemarGr/gruvbox-baby', { 'branch': 'main' }
+" Plug '~/git/gruvbox-baby'
+Plug 'sainnhe/gruvbox-material', { 'branch': 'master' }
+Plug 'sainnhe/everforest', { 'branch': 'master' }
+Plug 'rafamadriz/neon'
 " Plug 'rakr/vim-one'
 " Plug 'joshdick/onedark.vim'
 
@@ -65,8 +70,8 @@ Plug 'hrsh7th/nvim-compe'
 
 " Plug 'pwntester/octo.nvim'
 
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Plug 'nvim-treesitter/playground'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
 
 Plug 'rescript-lang/vim-rescript'
 ", { 'do': 'bash ~/.config/nvim/install-rescript-lsp.sh' }

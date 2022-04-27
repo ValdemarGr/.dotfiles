@@ -5,7 +5,8 @@ runtime plugins.vim
 let g:gruvbox_termcolors = 256
 set background=dark
 let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme gruvbox-baby
 highlight Pmenu ctermbg=black guibg=#222222
 " colorscheme one
 " colorscheme onedark

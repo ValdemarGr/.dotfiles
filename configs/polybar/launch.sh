@@ -5,7 +5,7 @@ if pgrep polybar; then killall -9 polybar; fi
 if [[ -z  "${PRIMARY_MONITOR}" ]]; then
   if xrandr --query | grep " connected" | cut -d" " -f1 | grep "^HDMI-0$"
   then
-      PRIMARY_MONITOR=DP-2
+      PRIMARY_MONITOR=DP-0
   else
       if xrandr --query | grep " connected" | cut -d" " -f1 | grep "^eDP-1$"
       then

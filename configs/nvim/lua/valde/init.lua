@@ -1,3 +1,7 @@
+require('plenary.reload').reload_module('nvim-tree', true)
+require('plenary.reload').reload_module('telescope', true)
+require('plenary.reload').reload_module('metals', true)
+
 require("valde.harpoon")
 telescope = require('valde.telescope')
 compe = require('valde.compe')

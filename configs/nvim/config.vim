@@ -41,6 +41,7 @@ autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 let g:airline_powerline_fonts = 1
 
+lua require('plenary.reload').reload_module('valde', true)
 lua require('valde')
 
 runtime keys.vim

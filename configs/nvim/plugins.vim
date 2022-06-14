@@ -57,7 +57,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'scalameta/nvim-metals'
+Plug 'scalameta/nvim-metals', { 'commit': 'e95084597553bc8a5457d44626e313acc919b2a7'}
 Plug 'neovim/nvim-lspconfig'
 " Plug 'glepnir/lspsaga.nvim'
 
@@ -94,6 +94,8 @@ Plug 'sainnhe/sonokai'
 Plug 'nanotech/jellybeans.vim'
 
 Plug 'github/copilot.vim'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 

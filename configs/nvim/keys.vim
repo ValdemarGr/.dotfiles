@@ -29,11 +29,11 @@ nnoremap <silent><leader>mp <cmd>HopPattern<CR>
 nnoremap <silent><leader>mw <cmd>HopWord<CR>
 
 "lsp
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
+" inoremap <silent><expr> <C-Space> compe#complete()
+" inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+" inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+" inoremap <C-f>   <cmd>lua require('cmp').select_next_item()<CR>
+" inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 " nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
 " nnoremap <silent><leader>a       <cmd>lua vim.lsp.buf.code_action()<CR>
 "nnoremap <silent>gd              <cmd>lua vim.lsp.buf.definition()<CR>

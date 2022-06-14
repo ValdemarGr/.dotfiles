@@ -64,7 +64,15 @@ Plug 'neovim/nvim-lspconfig'
 "Plug 'joshdick/onedark.vim'
 Plug 'phaazon/hop.nvim'
 
-Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'petertriho/cmp-git'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'hrsh7th/cmp-calc'
+Plug 'hrsh7th/cmp-copilot'
+Plug 'ray-x/cmp-treesitter'
 
 " Plug 'hoob3rt/lualine.nvim'
 

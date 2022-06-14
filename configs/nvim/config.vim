@@ -14,6 +14,7 @@ set incsearch
 set cursorcolumn
 set hidden
 :set completeopt=longest,menuone
+set completeopt=menu,menuone,noselect
 set termguicolors
 
 set number relativenumber

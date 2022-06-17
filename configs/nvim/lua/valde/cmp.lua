@@ -1,10 +1,26 @@
 require('cmp')
 require('cmp.utils.window')
+local types = require('cmp.types')
 
 local cmp = require('cmp')
 
 cmp.setup {
-  mapping = cmp.mapping.preset.insert({
+  mapping = {
+    ['<Down>'] = {
+      i = cmp.mapping.select_next_item({ behavior = types.cmp.SelectBehavior.Select }),
+    },
+    ['<Up>'] = {
+      i = cmp.mapping.select_prev_item({ behavior = types.cmp.SelectBehavior.Select }),
+    },
+    ['<C-n>'] = {
+      i = cmp.mapping.select_next_item({ behavior = types.cmp.SelectBehavior.Insert }),
+    },
+    ['<C-p>'] = {
+      i = cmp.mapping.select_prev_item({ behavior = types.cmp.SelectBehavior.Insert }),
+    },
+    ['<C-e>'] = {
+      i = cmp.mapping.abort(),
+    },
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
@@ -12,7 +28,7 @@ cmp.setup {
     ['<Tab>'] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     -- ["<Tab>"] = cmp.mapping.select_next_item(),
     -- ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-  }),
+  },
   sources = cmp.config.sources({
     { name =  'nvim_lsp' },
     { name =  'luasnip' },

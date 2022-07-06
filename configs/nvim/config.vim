@@ -1,4 +1,3 @@
-set autoread
 set scrolloff=12
 set noerrorbells
 set tabstop=2 softtabstop=2
@@ -33,6 +32,9 @@ let g:vimwiki_list = [{'path': '~/Git/.dotfiles/wiki/', 'path_html':'~/Git/.dotf
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set shortmess-=F
+
+set autoread
+au FocusGained,BufEnter * :silent! !
 
 let g:sql_type_default = 'pgsql'
 let g:ftplugin_sql_omni_key = '<C-j>'

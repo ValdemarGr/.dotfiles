@@ -1,3 +1,4 @@
+set autoread
 set scrolloff=12
 set noerrorbells
 set tabstop=2 softtabstop=2

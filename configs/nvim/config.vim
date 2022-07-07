@@ -43,6 +43,9 @@ autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent! loadview
+
 let g:airline_powerline_fonts = 1
 
 lua require('plenary.reload').reload_module('valde', true)

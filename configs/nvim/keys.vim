@@ -37,7 +37,7 @@ nnoremap <silent><leader>mw <cmd>HopWord<CR>
 " nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
 " nnoremap <silent><leader>a       <cmd>lua vim.lsp.buf.code_action()<CR>
 "nnoremap <silent>gd              <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent><leader>fo      <cmd>lua vim.lsp.buf.formatting_sync()<CR>
+nnoremap <silent><leader>fo      <cmd>lua vim.lsp.buf.formatting_sync(nil, 5000)<CR>
 
 inoremap <C-c> <Esc>
 

@@ -29,6 +29,8 @@ set diffopt+=vertical
 let mapleader = " "
 let g:vimwiki_list = [{'path': '~/Git/.dotfiles/wiki/', 'path_html':'~/Git/.dotfiles/html/'}]
 
+let g:copilot_node_command = "/home/valde/.nvm/versions/node/v16.15.0/bin/node"
+
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set shortmess-=F

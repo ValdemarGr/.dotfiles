@@ -1,4 +1,7 @@
-= Index! =
+= Index =
 
+== Work ==
 [[work-todo|Work Todo]]
+
+== Other ==
 [[global-todo|Gobal Todo]]

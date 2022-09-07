@@ -23,6 +23,18 @@ require('packer').startup(function(use)
       })
     end,
   }
+
+  use {
+    'pwntester/octo.nvim',
+    -- requires = {
+    --   'nvim-lua/plenary.nvim',
+    --   'nvim-telescope/telescope.nvim',
+    --   'kyazdani42/nvim-web-devicons',
+    -- },
+    config = function ()
+      require"octo".setup()
+    end
+  }
 end)
 
 require("valde.gitsigns")
@@ -36,7 +48,7 @@ require('valde.rescript')
 require('valde.luasnip')
 require('valde.treesitter')
 -- require('valde.lualine')
--- require('valde.octo')
+require('valde.octo')
 nvimtree = require('valde.luatree')
 require('valde.metals')
 require('neoclip').setup()

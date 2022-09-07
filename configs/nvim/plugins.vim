@@ -76,7 +76,6 @@ Plug 'ray-x/cmp-treesitter'
 
 " Plug 'hoob3rt/lualine.nvim'
 
-" Plug 'pwntester/octo.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'

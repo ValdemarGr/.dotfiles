@@ -72,6 +72,7 @@ nnoremap <silent><leader>q       <cmd>lua vim.lsp.buf.signature_help()<CR>
 " nnoremap <silent><leader>a       <cmd>Telescope lsp_code_actions<CR>
 nnoremap <silent><leader>a        <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent><leader>dw       <cmd>Telescope diagnostics<CR>
+nnoremap <silent><leader>r       <cmd>Telescope neoclip<CR>
 nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>

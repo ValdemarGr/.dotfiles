@@ -4,6 +4,7 @@ local actions = require('telescope.actions')
 -- require('telescope').load_extension('frecency')
 require('telescope').load_extension('zoxide')
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('neoclip')
 
 require('telescope').setup{
   defaults = {

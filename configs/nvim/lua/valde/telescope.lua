@@ -84,4 +84,11 @@ M.search_dotfiles = function()
   })
 end
 
+M.search_wiki = function()
+  require("telescope.builtin").find_files({
+    prompt_title = "wiki >",
+    cwd = "$DOTFILES/wiki"
+  })
+end
+
 return M

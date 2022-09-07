@@ -43,6 +43,7 @@ inoremap <C-c> <Esc>
 
 "telescope
 nnoremap <silent><leader>. <cmd>lua require('valde').telescope.search_dotfiles()<CR>
+nnoremap <silent><leader>W <cmd>lua require('valde').telescope.search_wiki()<CR>
 nnoremap <silent><leader>i <cmd>lua require('telescope.builtin').find_files()<CR>
 nnoremap <silent><leader>p <cmd>lua require('telescope.builtin').git_files()<CR>
 nnoremap <silent><leader>// <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>

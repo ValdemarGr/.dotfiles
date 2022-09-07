@@ -4,10 +4,10 @@
 - [ ] Query soren about code structure, org from powerful structure (https://github.com/casehubdk/creditlink/blob/d03c53309039b2c6ab608360d739434c54f80227/src/main/scala/casehub/creditlink/nordigen/api/FetchData.scala#L310-L332)
 
 == Nordigen == 
-- [ ] Implement get categories (should be trivially serializable)
-- [ ] Implement get requisitions
-  - [ ] Probably add institution to DB?
-  - [ ] DB Query
-  - [ ] Serialization
-
-
+- [X] Implement get categories (should be trivially serializable)
+- [ ] Requisition route
+  - [ ] Add requisition data to status table or join it on (prefer join)
+    * requisitionId: _root_.scala.Option[casehub.std.proto.`opaque`.UUID] = _root_.scala.None,
+    * institutionId: _root_.scala.Option[_root_.scala.Predef.String] = _root_.scala.None,
+    * created: _root_.scala.Option[casehub.std.proto.`opaque`.Instant] = _root_.scala.None,
+    

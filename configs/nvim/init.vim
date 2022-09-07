@@ -21,9 +21,8 @@ endfunction
 command Reload call Reload()
 
 function PushDot ()
-    silent exec '!git -C ' . $DOTFILES . ' add .'
-    silent exec '!git -C ' . $DOTFILES . ' commit -m "dotfiles update"'
-    silent exec '!git -C ' . $DOTFILES . ' push'
+    exec '!git -C ' . $DOTFILES . ' add .'
+    exec '!git -C ' . $DOTFILES . ' commit -m "dotfiles update"'
+    exec '!git -C ' . $DOTFILES . ' push'
 endfunction
 command PushDot call PushDot()
-

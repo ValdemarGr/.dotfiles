@@ -35,7 +35,7 @@ Plug 'lifepillar/pgsql.vim'
 Plug 'hashivim/vim-terraform'
 
 Plug 'farmergreg/vim-lastplace'
-"Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki'
 
 "Plug 'tpope/vim-dadbod'
 "Plug 'kristijanhusak/vim-dadbod-ui'

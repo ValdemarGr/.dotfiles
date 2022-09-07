@@ -19,3 +19,10 @@ function Reload ()
     source ~/.config/nvim/config.vim 
 endfunction
 command Reload call Reload()
+
+function PushDot ()
+    exec '!git -C ' . $DOTFILES . ' add .'
+    exec '!git -C ' . $DOTFILES . ' commit -m "dotfiles update"'
+    exec '!git -C ' . $DOTFILES . ' push'
+endfunction
+command PushDot call PushDot()

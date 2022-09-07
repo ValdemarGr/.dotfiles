@@ -1,2 +1,4 @@
-== aoeu ==
+= Index! =
 
+[[work-todo|Work Todo]]
+[[global-todo|Gobal Todo]]

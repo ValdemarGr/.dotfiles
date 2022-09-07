@@ -1,0 +1,12 @@
+= Work Todo =
+
+== Meta ==
+- [ ] Query soren about code structure, org from powerful structure (https://github.com/casehubdk/creditlink/blob/d03c53309039b2c6ab608360d739434c54f80227/src/main/scala/casehub/creditlink/nordigen/api/FetchData.scala#L310-L332)
+
+== Nordigen == 
+- [ ] Implement get categories (should be trivially serializable)
+- [ ] Implement get requisitions
+  - [ ] Probably add institution to DB?
+  - [ ] DB Query
+  - [ ] Serialization
+

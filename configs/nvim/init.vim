@@ -26,3 +26,4 @@ function PushDot ()
     silent exec '!git -C ' . $DOTFILES . ' push'
 endfunction
 command PushDot call PushDot()
+

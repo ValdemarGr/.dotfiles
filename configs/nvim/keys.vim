@@ -52,6 +52,10 @@ nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
 nnoremap <silent><leader>s <cmd>lua require('telescope.builtin').live_grep()<CR>
 nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR>
 nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
+
+nnoremap <silent><leader>gil             <cmd>Octo issue list<CR>
+nnoremap <silent><leader>ga             <cmd>Octo actions<CR>
+
 " nnoremap <silent><leader>gd              <cmd>lua require('telescope.builtin').lsp_references()<CR>
 
 "saga is no longer maintained??

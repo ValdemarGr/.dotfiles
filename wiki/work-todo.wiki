@@ -7,7 +7,5 @@
 - [X] Implement get categories (should be trivially serializable)
 - [ ] Requisition route
   - [ ] Add requisition data to status table or join it on (prefer join)
-    * requisitionId: _root_.scala.Option[casehub.std.proto.`opaque`.UUID] = _root_.scala.None,
     * institutionId: _root_.scala.Option[_root_.scala.Predef.String] = _root_.scala.None,
-    * created: _root_.scala.Option[casehub.std.proto.`opaque`.Instant] = _root_.scala.None,
     

@@ -49,7 +49,8 @@ nnoremap <silent><leader>p <cmd>lua require('telescope.builtin').git_files()<CR>
 nnoremap <silent><leader>// <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
 nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
 " nnoremap <silent><leader>x <cmd>lua require('telescope').extensions.zoxide.list()<CR>
-nnoremap <silent><leader>s <cmd>lua require('telescope.builtin').live_grep()<CR>
+" nnoremap <silent><leader>s <cmd>lua require('telescope.builtin').live_grep()<CR>
+nnoremap <silent><leader>s <cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>
 nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR>
 nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
 

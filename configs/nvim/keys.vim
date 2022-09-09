@@ -53,6 +53,7 @@ nnoremap <silent><leader>u <cmd>lua require('telescope.builtin').buffers()<CR>
 nnoremap <silent><leader>s <cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>
 nnoremap <silent><leader>o <cmd>lua require('telescope.builtin').git_status()<CR>
 nnoremap <silent>gd              <cmd>lua require('telescope.builtin').lsp_definitions()<CR>
+nnoremap <silent><leader>gw              <cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<CR>
 
 nnoremap <silent><leader>gil             <cmd>Octo issue list<CR>
 nnoremap <silent><leader>ga             <cmd>Octo actions<CR>

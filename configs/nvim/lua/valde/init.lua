@@ -47,6 +47,8 @@ require('packer').startup(function(use)
   }
 end)
 
+require('lspconfig').graphql.setup{}
+
 require("valde.gitsigns")
 require("valde.harpoon")
 telescope = require('valde.telescope')

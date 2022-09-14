@@ -1,5 +1,5 @@
 require("nvim-treesitter.configs").setup{
-  ensure_installed = { "scala" },
+  ensure_installed = { "scala", "graphql" },
   highlight = {
     enable = true
   }

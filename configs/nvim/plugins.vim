@@ -59,6 +59,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'scalameta/nvim-metals' ", { 'commit': 'e95084597553bc8a5457d44626e313acc919b2a7'}
 Plug 'neovim/nvim-lspconfig'
+" Plug 'jparise/vim-graphql'
 " Plug 'glepnir/lspsaga.nvim'
 
 "Plug 'joshdick/onedark.vim'

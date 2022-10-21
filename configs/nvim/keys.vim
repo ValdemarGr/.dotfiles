@@ -88,7 +88,7 @@ nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnost
 " nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
 
 " buildsystem
-let g:bazel_make_command = "Make!"
+let g:bazel_make_command = "Make"
 nnoremap <silent><leader>bb    <cmd>Bazel build //...<CR>
 nnoremap <silent><leader>bt    <cmd>Bazel test --test_output=errors //...<CR>
 nnoremap <silent><leader>br    <cmd>Dispatch! REPIN=1 bazel run @unpinned_maven//:pin<CR>

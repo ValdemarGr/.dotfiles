@@ -3,7 +3,9 @@ call plug#begin('~/.vim/plugged')
 " Plug 'morhetz/gruvbox'
 Plug 'ValdemarGr/gruvbox'
 Plug 'ValdemarGr/gruvbox-baby', { 'branch': 'main' }
+" Plug 'luisiacc/gruvbox-baby'
 " Plug '~/git/gruvbox-baby'
+"
 Plug 'sainnhe/gruvbox-material', { 'branch': 'master' }
 Plug 'sainnhe/everforest', { 'branch': 'master' }
 Plug 'rafamadriz/neon'

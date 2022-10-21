@@ -80,10 +80,10 @@ nnoremap <silent><leader>q       <cmd>lua vim.lsp.buf.signature_help()<CR>
 nnoremap <silent><leader>a        <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent><leader>dw       <cmd>Telescope diagnostics<CR>
 nnoremap <silent><leader>r       <cmd>Telescope neoclip<CR>
-nnoremap <silent><leader>dn       <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
-nnoremap <silent><leader>dp       <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
-nnoremap <silent><leader>dc       <cmd>lua vim.lsp.diagnostic.show_position_diagnostics()<CR>
-nnoremap <silent><leader>dl       <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+nnoremap <silent><leader>dn       <cmd>lua vim.diagnostic.goto_next()<CR>
+nnoremap <silent><leader>dp       <cmd>lua vim.diagnostic.goto_prev()<CR>
+nnoremap <silent><leader>dc       <cmd>lua vim.diagnostic.show_position_diagnostics()<CR>
+nnoremap <silent><leader>dl       <cmd>lua vim.diagnostic.show_line_diagnostics()<CR>
 
 " nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
 

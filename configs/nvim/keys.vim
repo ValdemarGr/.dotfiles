@@ -101,6 +101,8 @@ nnoremap <silent><leader>qo    <cmd>Copen<CR>
 nnoremap <silent><leader>x <cmd>lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <silent><leader>X <cmd>lua require("harpoon.term").gotoTerminal(2)<CR>
 
+nnoremap <silent><leader>cp <cmd>let @" = expand("%:~:.")<cr>
+
 let g:copilot_assume_mapped = v:true
 let g:copilot_no_tab_map = v:true
 imap <silent><script><expr> <C-y> copilot#Accept("\<CR>")

@@ -11,7 +11,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-set cursorcolumn
+" set cursorcolumn
 set hidden
 :set completeopt=longest,menuone
 set completeopt=menu,menuone,noselect

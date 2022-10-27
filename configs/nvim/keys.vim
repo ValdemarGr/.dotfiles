@@ -37,7 +37,7 @@ nnoremap <silent><leader>mw <cmd>HopWord<CR>
 " nnoremap <silent><leader>e       <cmd>lua vim.lsp.buf.hover()<CR>
 " nnoremap <silent><leader>a       <cmd>lua vim.lsp.buf.code_action()<CR>
 "nnoremap <silent>gd              <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent><leader>fo      <cmd>lua vim.lsp.buf.formatting_sync(nil, 5000)<CR>
+nnoremap <silent><leader>fo      <cmd>lua vim.lsp.buf.format(nil, 5000)<CR>
 
 inoremap <C-c> <Esc>
 
@@ -82,8 +82,8 @@ nnoremap <silent><leader>dw       <cmd>Telescope diagnostics<CR>
 nnoremap <silent><leader>r       <cmd>Telescope neoclip<CR>
 nnoremap <silent><leader>dn       <cmd>lua vim.diagnostic.goto_next()<CR>
 nnoremap <silent><leader>dp       <cmd>lua vim.diagnostic.goto_prev()<CR>
-nnoremap <silent><leader>dc       <cmd>lua vim.diagnostic.show_position_diagnostics()<CR>
-nnoremap <silent><leader>dl       <cmd>lua vim.diagnostic.show_line_diagnostics()<CR>
+" nnoremap <silent><leader>dc       <cmd>lua vim.diagnostic.show_position_diagnostics()<CR>
+nnoremap <silent><leader>dl       <cmd>lua vim.diagnostic.open_float()<CR>
 
 " nnoremap <silent><leader>x <cmd>buffer term://*zsh*<CR>
 

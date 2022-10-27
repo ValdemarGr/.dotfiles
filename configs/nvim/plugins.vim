@@ -105,7 +105,7 @@ Plug 'nanotech/jellybeans.vim'
 
 Plug 'github/copilot.vim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
-Plug 'lewis6991/gitsigns.nvim'
+" Plug 'lewis6991/gitsigns.nvim'
 
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'wakatime/vim-wakatime'

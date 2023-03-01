@@ -12,13 +12,15 @@ require("nvim-tree").setup {
 }
 
 function toggle()
-  require("nvim-tree").toggle()
+  require("nvim-tree.api").tree.toggle()
   vim.wo.number = true
   vim.wo.relativenumber = true
 end
 
 function find_file()
-  require("nvim-tree").find_file(true)
+  require("nvim-tree.api").tree.toggle({
+    find_file = true
+  })
   vim.wo.number = true
   vim.wo.relativenumber = true
 end

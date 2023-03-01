@@ -1,5 +1,6 @@
 "native
 map Q <Nop>
+nnoremap <Space> <Nop>
 command W w
 command Wq wq
 command WQ wq
@@ -23,10 +24,10 @@ nmap <leader>gu :diffget //2<CR>
 "nnoremap <silent> <leader>db :DBUI<CR>
 
 "hop
-nnoremap <silent><leader>m1 <cmd>HopChar1<CR>
-nnoremap <silent><leader>m2 <cmd>HopChar2<CR>
-nnoremap <silent><leader>mp <cmd>HopPattern<CR>
-nnoremap <silent><leader>mw <cmd>HopWord<CR>
+map <silent><leader>m1 <cmd>HopChar1<CR>
+map <silent><leader>m2 <cmd>HopChar2<CR>
+map <silent><leader>mp <cmd>HopPattern<CR>
+map <silent><leader>mw <cmd>HopWord<CR>
 
 "lsp
 " inoremap <silent><expr> <C-Space> compe#complete()

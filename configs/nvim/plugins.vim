@@ -45,7 +45,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/plenary.nvim' " , { 'commit': '9d81624fbcedd3dd43b38d7e13a1e7b3f873d8cd' } 
 Plug 'nvim-telescope/telescope.nvim'
 
 " Plug 'ray-x/lsp_signature.nvim'
@@ -59,7 +59,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'scalameta/nvim-metals' ", { 'commit': 'e95084597553bc8a5457d44626e313acc919b2a7'}
+Plug 'scalameta/nvim-metals' " , { 'commit': '054cda0af4f06a01814055079e5a169dc8afd78c'}
 Plug 'neovim/nvim-lspconfig'
 " Plug 'jparise/vim-graphql'
 " Plug 'glepnir/lspsaga.nvim'
@@ -104,10 +104,10 @@ Plug 'sainnhe/sonokai'
 Plug 'nanotech/jellybeans.vim'
 
 Plug 'github/copilot.vim'
-Plug 'nvim-telescope/telescope-ui-select.nvim'
+" Plug 'nvim-telescope/telescope-ui-select.nvim'
 " Plug 'lewis6991/gitsigns.nvim'
 
-Plug 'nvim-telescope/telescope-ui-select.nvim'
+" Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'wakatime/vim-wakatime'
 Plug 'AckslD/nvim-neoclip.lua'
 

@@ -112,6 +112,6 @@ export DOTFILES=~/git/.dotfiles
 source /usr/share/nvm/init-nvm.sh
 
 export PATH="$PATH:$HOME/.local/share/coursier/bin"
-source /opt/google-cloud-sdk/completion.zsh.inc
-source /opt/google-cloud-sdk/path.zsh.inc
+source /opt/google-cloud-cli/completion.zsh.inc
+source /opt/google-cloud-cli/path.zsh.inc
 export PATH=$PATH:/home/valde/.local/share/gem/ruby/3.0.0/bin

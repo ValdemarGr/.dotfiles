@@ -1,4 +1,3 @@
-
 local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 parser_config.authzed = {
         install_info = {
@@ -18,14 +17,12 @@ require("nvim-treesitter.configs").setup{
     enable = true
   }
 }
--- vim.cmd("TSEnable hightlight scala")
 
--- local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
--- parser_config.scala = {
---   install_info = {
---     url = "https://github.com/tree-sitter/tree-sitter-scala",
---     files = {"src/parser.c"}
---   },
---   filetype = "scala"
--- }
+vim.cmd [[augroup Authzed]]
+vim.cmd [[au!]]
+vim.cmd [[autocmd BufNewFile,BufRead *.authzed set filetype=authzed]]
+vim.cmd [[autocmd BufNewFile,BufRead *.zed set filetype=authzed]]
+vim.cmd [[autocmd BufNewFile,BufRead *.azd set filetype=authzed]]
+vim.cmd [[augroup Authzed]]
+
 

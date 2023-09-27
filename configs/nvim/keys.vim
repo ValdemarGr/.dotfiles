@@ -97,7 +97,9 @@ nnoremap <silent><leader>bf    <cmd>e %:h/BUILD.bazel<CR>
 
 nnoremap <silent><leader>qn    <cmd>cnext<CR>
 nnoremap <silent><leader>qp    <cmd>cprev<CR>
-nnoremap <silent><leader>qo    <cmd>Copen<CR>
+nnoremap <silent><leader>qo    <cmd>copen<CR>
+
+nnoremap <silent><leader>tlspact <cmd>:lua vim.lsp.buf.code_action({apply = true, filter= function (x) return string.find(x["title"], "Insert type annotation") end})<cr>
 
 nnoremap <silent><leader>x <cmd>lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <silent><leader>X <cmd>lua require("harpoon.term").gotoTerminal(2)<CR>

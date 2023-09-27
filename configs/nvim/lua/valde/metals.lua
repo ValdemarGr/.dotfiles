@@ -4,6 +4,7 @@ metals_config = require('metals').bare_config()
 metals_config.init_options.statusBarProvider = "on"
 metals_config.settings = {
   showImplicitArguments = true,
+  enableSemanticHighlighting = false
 }
 
 vim.cmd [[augroup lsp]]
